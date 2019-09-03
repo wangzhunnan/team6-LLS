@@ -1,0 +1,129 @@
+body{
+    background: url(./images/06denglu.jpg) ;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    background-size:cover;
+}
+.bg{
+    position: relative;
+}
+/* top_left */
+.top_left{
+    position: absolute;
+    background: #fff;
+    width: 11%;
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+}
+.top_left span{
+    color: #00f;
+}
+.top_left span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* logo */
+.logo{
+    text-align: center
+}
+.logo .img-responsive{
+    width: 240px;
+    height: 83px;
+}
+/* 文字介绍 */
+.introduction{
+    text-align: center;
+    color:#ccc;
+    margin-top: -8px;
+    margin-bottom: 36px;
+}
+/* 登录窗口 */
+.login{
+    background: #fff;
+    text-align: center;
+    margin: 0 auto;
+    width: 20%;
+    height: 250px;
+    padding: 20px;
+}
+.title{
+    margin-bottom: 30px;
+    color: #ccc;
+}
+.email{
+    border-bottom: 1px solid #000;
+    width: 200px;
+    margin: 20px auto;
+}
+.email .img-user{
+    width: 18px;
+    height: 17px;
+}
+.email input{
+    border: none;
+    width: 80%;
+}
+.pwd{
+    border-bottom: 1px solid #000;
+    width: 200px;
+    margin: 20px auto;
+}
+.pwd .img-passwd{
+    width: 18px;
+    height: 17px;
+}
+.pwd input{
+    border: none;
+    width: 80%;
+}
+.sub input{
+    width: 200px;
+    height: 36px;
+    background: #00f;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.aboutPwd{
+    font-size: 11px;
+    position: relative;
+}
+.aboutPwd .aboutPwd_left{
+    position: absolute;
+    left: 48px;
+}
+.aboutPwd .aboutPwd_right{
+    position: absolute;
+    right: 53px;
+    top: 5px;
+}
+.aboutPwd .aboutPwd_right span{
+    color:#00f;
+}
+.aboutPwd .aboutPwd_right span:hover{
+    cursor: pointer;
+}
+/* 底部 */
+.bottom{
+    height: 85px;
+    background-image: url(./images/ditu.jpg);
+    opacity: 0.3;
+    margin-top: 180px;
+    text-align: center;
+    line-height: 42px;
+}
+.bottom .bottom_upper{
+    color: #ccc;
+    font-size: 12px;
+}
+.bottom .bottom_upper span:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.bottom .bottom_lower{
+    color: #ccc;
+    font-size: 12px;
+    text-align: center;
+}
