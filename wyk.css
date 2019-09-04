@@ -387,7 +387,13 @@
     line-height: 30px;
     margin-right: 20px;
 }
-
+a{
+    text-decoration: none;
+    color: #99A3BC;
+}
+a:hover{
+    color: #fff;
+}
 .stuEvaTable {
     margin: 0px 0 0 20px;
     width: 1010px;
