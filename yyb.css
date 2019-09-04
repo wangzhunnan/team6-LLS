@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    -webkit-tap-highlight-color:rgb(0, 0, 0)
+}
+ol,ul{
+    margin-top: 0;
+    margin-bottom: 1em;
+    list-style:none outside none;
+}
+div{
+    display: block
+}
+.fenlei{
+    
+    top: 0;
+    
+    width: 100%;
+    background: #fff;
+}
+.fenlei-1{
+    width: 1280px;
+    height: 40px;
+    background:white;
+    margin: 0 auto;
+    position: relative;
+}
+.fenlei-1 ul{
+    height: 100%;
+    width: 100%;
+}
+.fenlei-1 .ul1 li{
+    float: left;
+    margin: 0 18px;
+    height: 40px;
+    width: 64px;
+    text-align: center;
+    line-height: 40px;
+    color: #505050;
+    cursor: pointer;
+}
+.fenlei-2{
+    float: left;
+    margin-left: 300px;
+    height: 100%;
+    width: 700px;
+}
+.fenlei-3{
+    position: absolute;
+    right: 165px;
+    line-height: 40px;
+    color: #aeaeae;
+    height: 40px; 
+}
+.tixing{
+    cursor: pointer;
+    font-size: 16px;
+    width: 16px;
+    height: 40px;
+    float: left;
+    z-index: 20;
+    margin-right: 5px;
+    margin-top: -1px;
+}
+.fenlei-3 img{
+    margin-top:10px;
+}
+.h-gename{
+    display: inline-block;
+    min-width: 70px;
+    text-align: center;
+    color: rgb(163, 163, 164);
+    height: 100%;
+}
+.z-name{
+    float: left;
+    padding-bottom: 2px;
+    border: none;
+    height: 20px;
+    line-height: 40px;
+}
+.z-name a{
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 70px;
+    text-align: center;
+    color: rgb(163, 163, 164);
+    height: 100%;
+}
+.tuichu{
+    float: right;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #bababa;
+    cursor: pointer;
+}
+.tuichu img{
+    width: 80%;
+    height:80%;
+    margin-top:6px;
+}
+.tiwen{
+    float: right;
+    height: 40px;
+    width: 120px;
+    background: #49c0e0;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #fff;
+    
+    position:relative;
+
+}
+.tiwen span {
+    margin-left:5px;
+}
+.tiwen img{
+    top:9px;
+    left: 5px;
+    position: absolute;
+}
+.tiwen p{
+    font-size: 18px;
+    vertical-align: -1px;
+    margin-right: 4px;
+}
+.logo{
+    float: left;
+    font-size: 20px;
+}
+.sproPublicMajor{
+    float: right;
+    width: 200px;
+    font-size: 18px;
+}
+.sproPublicside {
+    width: 210px;
+    height: 1064px;
+    background-color: #293039;
+    position: fixed;
+    top: 0;
+    z-index: 499;
+    color: #a3a3a4;
+    font-size: 14px;
+}
+.h-quetitle {
+    width: 100%;
+    height: 200px;
+    background-size: 40%;
+    background-color: #65f1ce;
+}
+.kaoshi{
+    text-align: center;
+  font-size: 30px;
+}
+.wenzi{
+    text-align: center;
+}
+.imgplace{
+    width:400px;
+    height:200px;
+    position:absolute;
+    top:50px;
+    left:1200px;
+}
+.finalAndStageTableTitle Span{
+    display: inline-block;
+}
+.finalAndStageTableTitle .Span01{
+    width: 350px;
+}
+.finalAndStageTableTitle .Span02{
+    width: 250px;
+}
+.finalAndStageTableTitle .Span03{
+    width: 200px;
+}
+.finalAndStageTableTitle .Span04{
+    width: 150px;
+}
+.stuExamMain {
+    width: 100%;
+}
+
+.stuExamTab {
+    width: 100%;
+    height: 30px;
+    background-color: #e4e9ec;
+    box-sizing: border-box;
+}
+.stuExamTabWrap {
+    width: 1280px;
+    margin: 0 auto;
+    padding-left: 210px;
+}
+.ExamTabs {
+    width: 100%;
+    padding-right: 210px;
+}
+.ExamTabsItem.current {
+    color: #333;
+    background-color: #fff;
+    border-top: 3px solid #4ac0e0;
+    border-bottom: 1px solid #f7f7f9;
+}
+.ExamTabsItem {
+    
+    display: inline-block;
+    width: 178px;
+    height: 30px;
+    line-height: 27px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+}
+
