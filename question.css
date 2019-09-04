@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* 导航栏 */
+.nav{
+    background: #fff;
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 40px;
+    position: fixed;
+}
+.nav .nav_left{
+    width: 35%;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 13px;
+    color: #505050;
+}
+.nav .nav_left li{
+    float: left;
+    list-style: none;
+    margin-left: 30px;
+}
+.nav .nav_left li:hover{
+    color: #49C0E0;
+}
+.nav .nav_right{
+    width: 20%;
+    line-height: 40px;
+    font-size: 13px;
+    position: absolute;
+    right: 110px;
+}
+.nav .nav_right span{
+    margin-left: 20px;
+    position: relative;
+}
+.nav .nav_right .name{
+    color: #A3A3A4;
+}
+.nav .nav_right .online{
+    background: #49C0E0;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    color: #fff;
+}
+.nav .nav_right img{
+    width: 18px;
+    height: 17px;
+    position: absolute;
+    right: -7px;
+    top: 0px;
+}
+
+/* 左侧固定logo */
+.logo{
+    width: 200px;
+    height: 800px;
+    background: #293039;
+    border: 1px solid #293039;
+    position: fixed;
+    left: 200px;
+    text-align: center;
+}
+.logo img{
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+.logo a{
+    color: #A3A3A3;
+    text-decoration: none;
+}
+.logo div{
+    width: 200px;
+    height: 26px;
+    line-height: 30px;
+    background: #000;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 13px;
+    border:1px solid #A3A3A3;
+    position: relative;
+}
+.logo div img{
+    width: 18px;
+    height: 17px;
+    position: absolute;
+    top: -1px;
+    right: 8px;
+}
+
+/* 主体部分content */
+/* .content{
+    width: 100%;
+    height: 800px;
+} */
+.content .search_bg{
+    /* width: 100%; */
+    height: 110px;
+    background: #65AEF2;
+    border: 1px solid #fff;
+}
+.search{
+    margin-top: 60px;
+    margin-left: 500px;
+}
+.search input{
+    width: 390px;
+    height: 28px;
+}
+.search button{
+    width: 85px;
+    height: 30px;
+    color: #fff;
+    border: none;
+}
+.search .sousuo{
+    margin-left: -5px;
+}
+.search button {
+    background: rgba(255, 255, 255, .26);
+    color: #fff;
+    border-color: rgba(255, 255, 255, .6);
+}
+
+/*
+.search input{
+    width: 390px;
+    
+}
+.search button{
+    width: 85px;
+    height: 30px;
+    color: #fff;
+    border: none;
+}
+.search .sousuo{
+    margin-left: -5px;
+} */
+
+.content .ask_bg{
+    width: 55%;
+    height: 592px;
+    margin-left: 470px;
+    /* background: #ccc; */
+    /* border: 1px solid #000; */
+}
+.content .ask_bg .my_ask{
+    width: 80px;
+    height: 30px;
+    /* background: #f00; */
+    line-height: 30px;
+    text-align: center;
+    border-left: 2px solid #62A1F4;
+    margin: 20px 0;
+}
+.content .ask_bg .my_problem{
+    /* width: 780px; */
+    /* background: #0f0; */
+    margin-left: 10px;
+    font-size: 13px;
+    color: #999;
+}
+.content .ask_bg .my_problem p{
+    margin: 10px 0;
+}
+.content .ask_bg .my_problem input{
+    width: 750px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.content .ask_bg .my_problem .tag{
+    width: 400px;
+}
+.content .ask_bg .my_problem button{
+    width: 90px;
+    height: 40px;
+    background: #62A1F4;
+    color: #fff;
+    border: none;
+}
+/* 底部 */
+.foot{
+    height: 120px;
+    text-align: center;
+    background-image: url(./images/ditu.jpg);
+}
+.foot .foot_upper img{
+    margin-top: 20px;
+    width: 140px;
+    height: 50px;
+}
+.foot .foot_upper .img_left{
+    width: 110px;
+    height: 30px;
+}
+.foot .foot_middle{
+    color: #ccc;
+    font-size: 12px;
+}
+.foot .foot_middle span:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.foot .foot_lower{
+    color: #ccc;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
