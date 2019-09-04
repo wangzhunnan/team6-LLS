@@ -1,0 +1,555 @@
+.html-container {
+    position: relative;
+    height: 100%;
+}
+
+.z-headerBoxTop {
+    height: 40px;
+}
+
+.z-headerWrap {
+    position: fixed;
+    top: 0;
+    z-index: 400;
+    width: 100%;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.072392) 0px 2px 5px;
+    -o-box-shadow: rgba(0, 0, 0, 0.072392) 0px 2px 5px;
+    -ms-box-shadow: rgba(0, 0, 0, 0.072392) 0px 2px 5px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.072392) 0px 2px 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.072392) 0px 2px 5px;
+}
+
+.z-header .header_tools .header_toolsUl li {
+    float: left;
+    margin: 0 18px;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    line-height: 10px;
+    color: #505050;
+    cursor: pointer;
+    list-style: none;
+}
+
+.z-header .header_seacrh {
+    float: right;
+    height: 40px;
+    width: 104px;
+    background: #49c0e0;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #fff;
+    padding: 0;
+}
+
+.z-header .header_break {
+    float: right;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #bababa;
+    cursor: pointer;
+}
+
+.HeadMasterTitle_box .HeadMasterTitle_msg span {
+    /* width: 110px; */
+    height: 26px;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 24px;
+    display: block;
+    margin-left: 100px
+}
+
+.HeadMasterTitle_box .HeadMasterTitle_msg p {
+    width: 465px;
+    height: 18px;
+    opacity: 0.79;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 8px;
+    margin-left: 100px
+}
+
+.HeadMasterTitle_box {
+    height: 144px;
+    background-color: #6cc4ce, #65f1ce;
+    background-image: linear-gradient(45deg, #ee526c 0%, #ee526c 1%, #f36a80 100%);
+}
+
+.stuEvaTab {
+    width: 100%;
+    height: 30px;
+    background-color: #d8d8de;
+    box-sizing: border-box;
+}
+
+.z-message1 {
+    position: absolute;
+    right: 165px;
+    line-height: 0px;
+    color: #aeaeae;
+    height: 40px;
+
+}
+
+
+
+.z-name .h-gename {
+    display: inline-block;
+    min-width: 70px;
+    text-align: center;
+    color: rgb(163, 163, 164);
+    height: 100%;
+    list-style: none;
+}
+
+.z-headerBoxTop {
+    height: 40px;
+}
+
+.z-header {
+    width: 1280px;
+    height: 40px;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+}
+
+.z-header .header_tools {
+    float: left;
+    margin-left: 300px;
+    height: 100%;
+    width: 700px;
+}
+
+.z-header .header_tools .header_toolsUl {
+    height: 100%;
+    width: 100%;
+
+}
+
+.z-header .h-grade {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    position: fixed;
+    /* display: none; */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.HeadMasterTitle_box {
+    height: 144px;
+    background-color: #6699ff;
+    background-image: linear-gradient(45deg, #ee526c 0%, #ee526c 1%, #f36a80 100%);
+}
+
+.HeadMasterTitle_box .HeadMasterTitle_msg {
+    float: left;
+    margin-left: 147px;
+}
+
+
+
+.stuEvaTab {
+    width: 100%;
+    height: 30px;
+    background-color: #d8d8de;
+    box-sizing: border-box;
+}
+
+.stuEvaWrap {
+    width: 1280px;
+    margin: 0 auto;
+    padding-left: 210px;
+}
+
+.stuETabs {
+    width: 100%;
+}
+
+.stuEvaTabsItem.current {
+    color: #606060;
+    background-color: #fff;
+    border-top: 3px solid #4ac0e0;
+    border-bottom: 1px solid #f7f7f9;
+}
+
+.stuEvaTabsItem {
+    display: inline-block;
+    width: 33%;
+    height: 30px;
+    line-height: 27px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+    border-top: 3px solid #d8d8de;
+}
+
+.stuEvaTabsItem {
+    display: inline-block;
+    width: 33%;
+    height: 30px;
+    line-height: 27px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+    border-top: 3px solid #d8d8de;
+}
+
+.stuEvaBody {
+    padding: 10px 5px 20px 20px;
+    min-height: 600px;
+    position: relative;
+    padding-left: 0;
+    margin-left: 20px;
+}
+
+.sproPublicside {
+    width: 210px;
+    height: 1064px;
+    background-color: #293039;
+    position: fixed;
+    /* left: 40px; */
+    top: 0;
+    z-index: 499;
+    color: #a3a3a4;
+    font-size: 14px;
+    /* overflow-y: auto; */
+}
+
+.sproPublicside .lenovotit {
+    background: url(./img/logo.png) no-repeat 6px 4px;
+    z-index: 22;
+    font-size: 16px;
+    color: #fff;
+    padding: 38px 0 0 0;
+    text-indent: 17px;
+    display: block;
+}
+
+.sproPublicMajor {
+    cursor: pointer;
+    color: #a3a3a3;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 51px;
+    text-align: center;
+}
+
+.sproPublicleftselectWrap {
+    border: 1px solid #4b525a;
+    background: #141a21;
+    width: 210px;
+    margin-top: 10px;
+    height: 34px;
+}
+
+.sproPublicleftselect {
+    border: 1px solid #e9e7e8;
+    width: 100%;
+    height: 100%;
+    background-size: 18px 15px;
+}
+
+.sproPublicleftselect span {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    padding-left: 12px;
+    line-height: 33px;
+    display: inline-block;
+    font-size: 14px;
+    color: #f4f4f4;
+    /* background: url(././static/fonts/xiala.svg) no-repeat 94.5% center; */
+    background-size: 16px 14px;
+}
+
+.sproPublicleftselect ul {
+    width: 208px;
+    left: -1px;
+    position: relative;
+    z-index: 888;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.98) 0px 1px 9px;
+}
+
+.CourseconfigWrap {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.stuEvaBody {
+    padding: 10px 5px 20px 20px;
+    min-height: 600px;
+    position: relative;
+    padding-left: 0;
+    margin-left: 20px;
+}
+
+.stuEvaBody h2 {
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 15px;
+    line-height: 20px;
+    height: 23px;
+    border-left: 4px solid #4abfe0;
+}
+
+.stuEvaTabItem {
+    height: 32px;
+    width: 1010px;
+    margin: 14px 0 0 20px;
+    box-sizing: border-box;
+    text-align: left;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.stuEvaTabItem .tabItem.current {
+    border-top: 4px solid rgb(73, 192, 224);
+    border-right: 1px solid rgb(228, 228, 228);
+    background: rgb(255, 255, 255);
+    outline: none;
+}
+
+.stuEvaTabItem .tabItem {
+    display: inline-block;
+    border-top: 4px solid transparent;
+    border-right: 1px solid rgb(228, 228, 228);
+    background: rgb(244, 244, 246);
+    cursor: pointer;
+    text-align: center;
+    height: 32px;
+    line-height: 28px;
+    width: 100px;
+    box-sizing: border-box;
+    color: #606060;
+}
+
+.stuEvaTabItem {
+    height: 32px;
+    width: 1010px;
+    margin: 14px 0 0 20px;
+    box-sizing: border-box;
+    text-align: left;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.stuEvaFilter {
+    height: 50px;
+    width: 1010px;
+    background-color: #f4f4f6;
+    margin: 12px 0 0 20px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 12px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.stuEvaFilter span {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 20px;
+}
+
+.stuEvaFilter span {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 20px;
+}
+
+.stuEvaFilter span {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 20px;
+}
+
+.stuEvaFilter span {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 20px;
+}
+
+.stuEvaTable {
+    margin: 0px 0 0 20px;
+    width: 1010px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.stuEvaTable tr {
+    border: 1px solid #f4f4f6;
+    color: #606060;
+}
+
+.pageBtn {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.pageBtn a.noUse {
+    color: #fff;
+    background-color: #F5F5F5;
+    border-color: #f5f5f5;
+}
+
+.evaNoData {
+    min-height: 500px;
+    /* width: 1100px; */
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    background: url(./img/commet03.jpg) no-repeat center;
+    background-position-y: 10px;
+    position: relativeï¼›;
+}
+
+.evaNoData i {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    bottom: 195px;
+    font-weight: 100;
+    color: #c3c3c3;
+    font-size: 14px;
+}
+
+.z-footer {
+    width: 100%;
+    height: 126px;
+    background: url(./img/ditu.jpg);
+    padding-top: 30px;
+    bottom: 0;
+}
+
+.z-footerWrap {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.z-footer1 {
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #afb0b2;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.z-footer2 {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+}
+
+.z-jp {
+    height: 30px;
+    width: 600px;
+    line-height: 30px;
+    color: #6f7376;
+    text-align: center;
+    font-size: 12px;
+}
+
+.stuExamMainInner {
+    margin-left: 210px;
+    padding: 20px 0px 20px 25px;
+    min-height: 650px;
+}
+
+.stuExamMainInner h2 {
+    width: 100%;
+    min-width: 100px;
+    font-size: 16px;
+    height: 18px;
+    line-height: 18px;
+    text-indent: 11px;
+    border-left: 4px solid #4ac0e0;
+    position: relative;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.finalAndStageTableTitle {
+    width: 100%;
+    height: 37px;
+    padding-left: 15px;
+    color: #343434;
+}
+
+.sproPublicside .lenovotit {
+    background: url(./img/logo.png) no-repeat 6px 4px;
+    z-index: 22;
+    font-size: 16px;
+    color: #fff;
+    padding: 38px 0 0 0;
+    text-indent: 17px;
+    display: block;
+}
+
+.noTestShow {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    background-color: #f5f5f5;
+    margin-top: 5px;
+    text-align: left;
+    padding-left: 20px;
+    color: #606060;
+    /* position: relative; */
+    /* font-weight: 100; */
+}
+
+.ExamTabsItem {
+    display: inline-block;
+    width: 178px;
+    height: 30px;
+    line-height: 27px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+    /* font-weight: 100; */
+    border-top: 3px solid #e9e9e9;
+}
+
+.sproPublicside .lenovotit {
+    background: url(images/logo.png) no-repeat 6px 4px;
+    z-index: 22;
+    font-size: 16px;
+    color: #fff;
+    padding: 38px 0 0 0;
+    text-indent: 17px;
+    display: block;
+}
+
+.stuExamTab {
+    width: 100%;
+    height: 30px;
+    /* line-height: 44px; */
+    background-color: #e4e9ec;
+    box-sizing: border-box;
+}
