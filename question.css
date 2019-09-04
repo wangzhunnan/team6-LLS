@@ -10,6 +10,9 @@
     height: 40px;
     position: fixed;
 }
+.nav .nav_left li a{
+    text-decoration: none;
+}
 .nav .nav_left{
     width: 35%;
     margin: 0 auto;
@@ -22,8 +25,10 @@
     list-style: none;
     margin-left: 30px;
 }
+
 .nav .nav_left li:hover{
     color: #49C0E0;
+    cursor: pointer;
 }
 .nav .nav_right{
     width: 20%;
@@ -39,12 +44,15 @@
 .nav .nav_right .name{
     color: #A3A3A4;
 }
+.nav .nav_right .online a{
+    text-decoration: none;
+    color: #fff;
+}
 .nav .nav_right .online{
     background: #49C0E0;
     display: inline-block;
     width: 80px;
     text-align: center;
-    color: #fff;
 }
 .nav .nav_right img{
     width: 18px;
