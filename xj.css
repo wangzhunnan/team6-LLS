@@ -1,0 +1,176 @@
+body{
+    height:auto;
+    width:auto; 
+    background-size:100%;
+}
+/* header部分 */
+/* .header{
+    margin-top:10px;
+} */
+.list1 li{
+    float: left;
+    margin: 0 18px;
+    height: 40px;
+    width: 70px;
+    text-align: center;
+    line-height: 40px;
+    color: #505050;
+    cursor: pointer;
+}
+.list1{
+    list-style-type:none;
+    margin-left:260px;
+    margin-top:0px;
+    /* float:right; */
+}
+.list2{
+    list-style-type:none;
+    /* float:right; */
+}
+/* a标签去掉下划线 */
+.major{
+    text-decoration:none;
+    color:#808080;
+}
+.lesson{
+    text-decoration:none;  
+    color:#808080;
+}
+.grow{
+    text-decoration:none;
+    color:#808080;
+}
+
+.help{
+    text-decoration:none;
+    color:#808080;
+}
+
+.test{
+    text-decoration:none;
+    color:#808080;
+}
+.lv-test1{
+    font-size:20px;
+    margin-left:300px;
+}
+.lv-test2{
+    font-size:17px;
+    margin-left:300px;
+    padding-top:-25px;
+}
+.lv-test3{
+    font-size:12px;
+    margin-left:300px;
+    padding-top:-25px;
+}
+.black{
+    width:196px;
+    height:2300px;
+    position:fixed;
+    margin-top: -228px;
+    left:40px;
+}
+/*主体部分 */
+.box1{
+    border:2px solid rgba(21, 255, 0, 0.164);
+    width:160px;
+    height:220px;
+    float:left;
+    margin-left:300px;
+}
+.box2{
+    border:2px solid  rgba(21, 255, 0, 0.164);
+    width:160px;
+    height:220px;
+    float:left;
+    margin-left:7px;
+}
+.box3{
+    border:2px solid  rgba(21, 255, 0, 0.164);
+    width:160px;
+    height:220px;
+    float:left;
+    margin-left:7px;
+}
+.box4{
+    border:2px solid  rgba(21, 255, 0, 0.164);
+    width:160px;
+    height:220px;
+    float:left;
+    margin-left:7px;
+}
+.box5{
+    border:2px solid  rgba(21, 255, 0, 0.164);
+    width:160px;
+    height:220px;
+    float:left;
+    margin-left:7px;
+}
+
+.center{
+    margin-top:25px;
+}
+.center p{
+    text-align:center;
+}
+.p1{
+   background: rgba(21, 255, 0, 0.164);
+   margin-top:0px;
+   height:30px;
+   line-height: 30px;
+}
+
+.box1:hover{
+    width: 175px;
+    height:235px;
+}
+.box2:hover{
+    width: 175px;
+    height:235px;
+}
+.box3:hover{
+    width: 175px;
+    height:235px;
+}
+.box4:hover{
+    width: 175px;
+    height:235px;
+}
+.box5:hover{
+    width: 175px;
+    height:235px;
+    
+}
+
+
+
+
+
+/* end */
+
+.footer{
+    margin-top:800px;
+    background-image:url(images/ditu.jpg);
+}
+.green{
+  width:100%;
+  height:135px;
+  margin-top:12px;
+  background:url(images/green.jpg);
+  display:inline-block;
+}
+/* .lv-img{
+    height:120px;
+    width:100px;
+     float:right; 
+} */
+.z-footer{
+    margin-left:300px;
+} 
+.x-footer{
+    margin-left:300px;
+} 
+.s-footer{
+    margin-left:300px;
+} 
