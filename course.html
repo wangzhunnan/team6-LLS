@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./course.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <div class="nav_left">
+            <ul>
+                <li>我的专业</li>
+                <li>我的课程</li>
+                <li>我的成长</li>
+                <li>我的参与</li>
+                <li>我的考试</li>
+                <!-- <li><a href="./xj.html">我的专业</a></li>
+                <li><a href="./login03.html">我的课程</a></li>
+                <li><a href="">我的成长</a></li>
+                <li><a href="./wodecanyu.html">我的参与</a></li>
+                <li><a href="./wyk.html">我的考试</a></li> -->
+            </ul>
+        </div>
+        <div class="nav_right">
+            <span><img src="./images/user.png" alt=""></span>
+            <span class="name">王准男</span>
+            <span class="online"><a href="question.html">在线提问</a></span>
+            <span><img src="./images/passwd.png" alt=""></span>
+        </div>
+    </div>
+    <!-- 左侧固定 -->
+    <div class="logo">
+        <img src="./images/logo.png" alt="">
+        <a href="">WEB前端开发</a>
+        <div>第五学期(本学期)<img src="./images/user.png" alt=""></div>
+    </div>
+    <!-- 主体部分 -->
+    <div class="content">
+        <div class="title_bg">
+            <div class="title">
+                <p>第一阶段 HTML基础(一)</p>
+                <div> ← 上一课时</div>
+                <div>下一课时 → </div>
+            </div>
+        </div>
+        <div class="title_two">
+            <div class="title_two_left">
+                Web前端基础（HTML5和CSS3) — 第一阶段 HTML基础(一)
+            </div>
+            <div class="title_two_right">
+                返回 →
+            </div>
+        </div>
+        <!-- 切换部分 -->
+        <div class="switch">
+            <div class="title_switch_bg">
+                <div class="title_switch">
+                    <div class="addbg">
+                        <a href="#content1">课堂资料</a>
+                    </div>
+                    <div class=""><a href="#content2">视频回顾</a></div>
+                    <div class=""><a href="#content3">我要备案</a></div>
+                    <div class=""><a href="#content4">添加习题</a></div>
+                </div>
+            </div>
+            <div id="switch_page_bg">
+                <!-- 第一个切换 -->
+                <div class="switch_page_one" id="content1" style="display: none">
+                    <img src="./images/touxiang.jpg" alt="">
+                    <img src="./images/touxiang.jpg" alt="">
+                    <img src="./images/touxiang.jpg" alt="">
+                </div>
+                <!-- 第二个切换 -->
+                <div class="switch_page_two" id="content2" style="display: block">
+                    <div class="page_two_left" id="page_two_left">
+                        <div class="vio_one" id="vio1" style="display: blovk">
+                            <video width="600px" height="300px" controls="controls">
+                                    <source src="./video/gx.mp4" width="300" height="200" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="vio_two" id="vio2" style="display: none">
+                            <video width="600px" height="200px" controls="controls">
+                                    <source src="./video/gx.mp4" width="300" height="200" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="vio_three"  id="vio3" style="display: none">
+                            <video width="600px" height="100px" controls="controls">
+                                    <source src="./video/gx.mp4" width="300" height="200" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="page_two_right">
+                        <div class="right_top">
+                            <span>视频播放列表</span>
+                        </div>
+                        <div class="right_bottom">
+                            <div class="vio01">
+                                <a href="#vio1">
+                                    01-web基础知识
+                                </a>
+                            </div>
+                            <div class="vio02">
+                                <a href="#vio2">
+                                    02-IDE使用
+                                </a>
+                            </div>
+                            <div class="vio03">
+                                <a href="#vio3">
+                                    03-stom安装
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot_upper">
+            <img src="./images/lenovo.png" alt="" class="img_left"> | <img src="./images/lenovo-learning.png" alt=""
+                class="img_right">
+        </div>
+        <div class="foot_middle">
+            <span>联系我们</span>
+            <span>意见反馈</span>
+            <span>名师风采</span>
+        </div>
+        <div class="foot_lower">
+            <span>Copyrigt2017联想(北京)有限公司</span>
+            <span>京ICP备11035381</span>
+            <span>|</span>
+            <span>京公网安备110108007970号</span>
+        </div>
+    </div>
+    <script src="./course.js"></script>
+</body>
+</html>
