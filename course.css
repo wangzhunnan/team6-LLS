@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* 导航栏 */
+.nav{
+    background: #fff;
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 40px;
+    position: fixed;
+}
+.nav .nav_left li a{
+    text-decoration: none;
+}
+.nav .nav_left{
+    width: 35%;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 13px;
+    color: #505050;
+}
+.nav .nav_left li{
+    float: left;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.nav .nav_left li:hover{
+    color: #49C0E0;
+    cursor: pointer;
+}
+.nav .nav_right{
+    width: 20%;
+    line-height: 40px;
+    font-size: 13px;
+    position: absolute;
+    right: 110px;
+}
+.nav .nav_right span{
+    margin-left: 20px;
+    position: relative;
+}
+.nav .nav_right .name{
+    color: #A3A3A4;
+}
+.nav .nav_right .online a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav .nav_right .online{
+    background: #49C0E0;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+}
+.nav .nav_right img{
+    width: 18px;
+    height: 17px;
+    position: absolute;
+    right: -7px;
+    top: 0px;
+}
+
+/* 左侧固定logo */
+.logo{
+    width: 200px;
+    height: 800px;
+    background: #293039;
+    border: 1px solid #293039;
+    position: fixed;
+    left: 200px;
+    text-align: center;
+}
+.logo img{
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+.logo a{
+    color: #A3A3A3;
+    text-decoration: none;
+}
+.logo div{
+    width: 200px;
+    height: 26px;
+    line-height: 30px;
+    background: #000;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 13px;
+    border:1px solid #A3A3A3;
+    position: relative;
+}
+.logo div img{
+    width: 18px;
+    height: 17px;
+    position: absolute;
+    top: -1px;
+    right: 8px;
+}
+/* 中间部分 */
+/* .content{
+    width: 100%;
+    border: 1px solid #000;
+} */
+.content .title_bg{
+    width: 100%;
+    height: 170px;
+    background: #12C7EE;
+    border: 1px solid #000;
+    text-align: center;
+    color: #fff;
+}
+.content .title{
+    margin-top: 65px;
+    margin-left: 200px;
+}
+.content .title p{
+    font-size: 24px;
+}
+.content .title div{
+    display: inline-block;
+    border: 1px solid #fff;
+    margin-top: 15px;
+    width: 100px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+}
+.content .title_two{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #E4E9EC;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 13px;
+}
+.title_two .title_two_left{
+    margin-right: 280px;
+}
+.title_two .title_two_right{
+    position: absolute;
+    top: 175px;
+    right: 190px;
+    color: #AEAEAE;
+}
+.title_two .title_two_right:hover{
+    color: #12C7EE;
+    cursor: pointer;
+}
+/* 切换部分 */
+
+.content .switch{
+    background: #F4F4F5;
+}
+.content .title_switch_bg{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    color: #A3A3A3;
+    line-height: 50px;
+    font-size: 14px;
+}
+.content .title_switch_bg .title_switch div{
+    display: inline-block;
+    width: 100px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+.title_switch_bg .title_switch{
+    margin-left: 425px;
+}
+.title_switch_bg .title_switch a{
+    text-decoration: none;
+}
+.addbg{
+    background: #F4F4F5;
+    color: #A3A3A3;
+    border-top: 2px solid #12C7EE;
+}
+
+.content #switch_page_bg{
+    width: 900px;
+    background: #fff;
+    border: 1px solid #000;
+    margin-top: 10px;
+    margin-left: 430px;
+    position: relative;
+}
+
+.content #switch_page_bg .switch_page_one img{
+    width: 100%;
+    height: 500px;
+}
+.content #switch_page_bg .switch_page_two div{
+    display: inline-block;
+}
+#switch_page_bg .switch_page_two .page_two_left{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-top: 80px; 
+}
+
+#switch_page_bg .switch_page_two .page_two_right{
+    width: 27%;
+    height: 300px;
+    background: #ff0;
+    margin-bottom: 80px;
+    margin-top: 90px;
+    margin-left: 650px;
+}
+#switch_page_bg .switch_page_two .page_two_right .right_top{
+    width: 100%;
+    height: 40px;
+    background: #F7F7F7;
+    text-align: center;
+    line-height: 40px;
+}
+#switch_page_bg .switch_page_two .page_two_right .right_top span{
+    border-bottom: 2px solid #12C7EE;
+}
+#switch_page_bg .switch_page_two .page_two_right .right_bottom div{
+    display: block;
+    margin-top: 10px;
+}
+
+/* 底部 */
+.foot{
+    height: 120px;
+    text-align: center;
+    background-image: url(./images/ditu.jpg);
+}
+.foot .foot_upper img{
+    margin-top: 20px;
+    width: 140px;
+    height: 50px;
+}
+.foot .foot_upper .img_left{
+    width: 110px;
+    height: 30px;
+}
+.foot .foot_middle{
+    color: #ccc;
+    font-size: 12px;
+}
+.foot .foot_middle span:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.foot .foot_lower{
+    color: #ccc;
+    font-size: 12px;
+    text-align: center;
+}
