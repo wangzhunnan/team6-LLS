@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style class="vjs-styles-defaults">
+        .video-js {
+            width: 300px;
+            height: 150px;
+        }
+
+        .vjs-fluid {
+            padding-top: 56.25%
+        }
+
+    </style>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>培养能力,塑造人才</title>
+    <link rel="stylesheet" href="01.css">
+    
+</head>
+
+<body>
+    <div id="app" class="html-container">
+        <div data-reactroot="">
+            <div id="z-headerBox">
+                <div class="z-headerBoxTop"></div>
+                <div id="z-headerWrap" class="z-headerWrap">
+                    <div class="z-header">
+                        <div class="header_tools">
+                            <ul class="header_toolsUl">
+                                <li class="co"><a class="">我的专业</a></li>
+                                <li class=" "><a class="dibhead">我的课程</a></li>
+                                <li class="co"><a class="">我的成长</a></li>
+                                <li class="co"><a class="Active">我的参与</a></li>
+                                <li class="co"><a class="">我的考试</a></li>
+                            </ul>
+                        </div>
+                        <div class="h-grade" style="display: none;">
+                            <div class="h-grade1"></div>
+                            <div class="h-grades">
+                                <div class="h-graclose"><span class="iconfont icon-guanbi fr"></span></div>
+                                <div class="h-stripe">
+                                  
+                                </div>
+                                <div class="h-graclose2"><button>好的</button></div>
+                            </div>
+                        </div>
+                        <div class="z-message1">
+                            <ul>
+                                <li class="sproz-yx" style="display: inline-block;"><b
+                                        class="iconfont icon-xiaoxizhongxin-"></b>
+                                    <div class="spro_messageheader">
+                                        <div class="h-muns">
+                                            <div class="spro-numBox" style="display: none; width: 14px;">
+                                                <div class="spro-num" style="display: none; width: 14px;">0</div>
+                                            </div>
+                                        </div>
+                                        <div class="z-conceal" id="import" style="display: none;"><span
+                                                class="sp1"><span class="sp2"></span></span>
+                                            <ul class="showmessageList">
+                                                <li id="seeli" style="display: block;"><i class="see0"></i><i
+                                                        class="spro_messagei2">当前无新消息</i></li>
+                                                <li id="listyle1"><a class="listyle1Link" href="#/message">查看全部</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="z-name" id="h-yx"><a class="h-gename">付豪</a></li>
+                            </ul>
+                        </div>
+                        <div title="退出登录" class="header_break iconfont icon-tuichu1"></div>
+                        <div class="header_seacrh commonButton"><span class="iconfont icon-zaixianwenda-"></span>
+                            <!-- react-text: 2053 -->在线提问
+                            <!-- /react-text -->
+                        </div>
+                    </div>
+                   
+                </div>
+             
+            </div>
+            <div class="HeadMasterTitle_box"
+                style="background-color: rgb(238, 82, 108); background-image: linear-gradient(45deg, rgb(238, 82, 108) 0%, rgb(238, 82, 108) 1%, rgb(243, 106, 128) 100%);">
+                <div class="HeadMasterTitle_wrap">
+                    <div class="HeadMasterTitle_msg" style="margin-left: 320px;"><span
+                            style="margin-top: 40px;">第一阶段HTML</span>
+                        
+                    </div>
+                    <div class="HeadMasterTitle_bg3"></div>
+                </div>
+            </div>
+            <div class="stuEvaTab">
+                <div class="stuEvaWrap">
+                    <div class="stuETabs">
+                        <span class="stuEvaTabsItem current" data-tab="0" id="shipin">我要上课</span>
+                        <span class="stuEvaTabsItem current" data-tab="0" id="jiaoan">查看教案</span>
+                        <span class="stuEvaTabsItem current" data-tab="0" id="beike">我要备课</span>
+                        <span class="stuEvaTabsItem current" data-tab="0" id="xiti">添加习题</span>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="stuEvaBody" style="width: 1280px; margin: auto;">
+                <div class="sproPublicside"><a class="lenovotit" href="#/profession"></a>
+                    <div class="sproPublicMajor">WEB前端开发</div>
+                    <div class="sproPublicleftselectWrap">
+                        <div class="sproPublicleftselect" style="border: 1px solid rgb(101, 109, 118);"><span>
+                                <!-- react-text: 2078 -->&nbsp;&nbsp;&nbsp;
+                                <!-- /react-text -->
+                                <!-- react-text: 2079 -->第五学期 (本学期)
+                                <!-- /react-text --></span>
+                            <ul style="visibility: hidden;">
+                                <li value="0">
+                                    <!-- react-text: 2082 -->&nbsp;&nbsp;&nbsp;
+                                    <!-- /react-text -->
+                                    <!-- react-text: 2083 -->全部学期
+                                    <!-- /react-text -->
+                                </li>
+                                <li value="1">
+                                    <!-- react-text: 2085 -->&nbsp;&nbsp;&nbsp;
+                                    <!-- /react-text -->
+                                    <!-- react-text: 2086 -->第一学期
+                                    <!-- /react-text -->
+                                </li>
+                                <li value="2">
+                                    <!-- react-text: 2088 -->&nbsp;&nbsp;&nbsp;
+                                    <!-- /react-text -->
+                                    <!-- react-text: 2089 -->第二学期
+                                    <!-- /react-text -->
+                                </li>
+                                <li value="3">
+                                    <!-- react-text: 2091 -->&nbsp;&nbsp;&nbsp;
+                                    <!-- /react-text -->
+                                    <!-- react-text: 2092 -->第三学期
+                                    <!-- /react-text -->
+                                </li>
+                                <li value="4">
+                                    <!-- react-text: 2094 -->&nbsp;&nbsp;&nbsp;
+                                    <!-- /react-text -->
+                                    <!-- react-text: 2095 -->第四学期
+                                    <!-- /react-text -->
+                                </li>
+                                <li value="5">
+                                    <!-- react-text: 2097 -->&nbsp;&nbsp;&nbsp;
+                                    <!-- /react-text -->
+                                    <!-- react-text: 2098 -->第五学期(本学期)
+                                    <!-- /react-text -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="CourseconfigWrap" style="height: 592px;"></div>
+                </div>
+                <div class="zhong">
+                    <div class="zhong1">
+                        <div style="background: rgb(244, 244, 245);min-height:500px;">
+        
+                            <div style="height: 500px;padding: 10px 0px 0px 230px;min-height: 700px;">
+                                <div style="background: rgb(255, 255, 255);overflow: hidden;width: 1013px; margin-left: 12px;position:absolute;">
+                                    <!-- 我要上课的视频 -->
+                                    <div id="shipin1" style="width: 1013px;overflow: hidden;position: relative;min-height: 500px; display: block;">
+                                        <div class="video-1">
+                                            <video style="height: 300px;" src="./1.mp4" class="video1" id="video" controls="controls"></video>
+                                        </div>
+                                        <div style="width: 302px; height: 400px; position: absolute; right: 0px; top: 10px;">
+                                            <div style="height: 48px;width: 302px;background: rgb(247, 247, 247);margin-bottom: 16px; position: relative;">
+                                                <div style="width: 127px;height: 27px;position: absolute;top: 0px;left: 0px;bottom: 0px;right: 0px;margin: auto;border-bottom: 2px solid rgb(74, 198, 231);">
+                                                    <span style="float: left; font-size: 16px; color: rgb(47, 58, 72);margin-left:12px">视频播放列表</span>
+                                                </div>
+                                                <div style="overflow: auto;height: 426px;">
+                                                    <p class="biao-1">
+                                                        <span class="biao1-span">
+                                                            <span class="span-1" id="span1">01-web基础知识</span>
+                                                            <span class="span-2">提前缓存</span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="biao-1">
+                                                        <span class="biao1-span">
+                                                            <span class="span-1" id="span2">02-IDE的使用.mp4</span>
+                                                            <span class="span-2">提前缓存</span>
+                                                        </span>
+                                                    </p>
+                                                    <p class="biao-1">
+                                                        <span class="biao1-span">
+                                                            <span class="span-1" id="span3">03-安装atom.mp4</span>
+                                                            <span class="span-2">提前缓存</span>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <!-- 查看教案 -->
+                                    <div id="jiaoan1" style="width: 1013px;overflow: hidden;position: relative;min-height: 500px;display: none">
+                                        <img src="./images/01.jpg" alt="" style="margin-left:100px">
+                                    </div>
+                                    <!-- 查看备课 -->
+                                    <div id="beike1" style="width: 1013px;overflow: hidden;position: relative;min-height: 500px; display: none">
+                                        <img src="./images/02.jpg" alt="" style="margin: 50px;">
+                                    </div>
+                                    <!-- 添加习题 -->
+                                    <div id="xiti1">
+                                        <div class="xiti">
+                                            <div class="xiti1">
+                                                <h2 class="zl">添加习题</h2>
+                                            </div>
+                                            <div class="xiti2">
+                                                <span>添加课堂练习</span>
+                                            </div>
+                                        </div>
+                                        <div style="width: 1013px;overflow: hidden;position: relative;min-height: 500px;">
+                                            <div class="lianxi1" id="lianxi1">
+                                                <div class="a1">
+                                                    1.修改css
+                                                </div>
+                                                <div class="lianxi1-1">
+                                                    <span id="a">解题思路</span>
+                                                    <div>
+                                                        <ul>
+                                                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="a1">
+                                                    2.操作DOM
+                                                <div>
+                                                <div class="lianxi1-2">
+                                                    <span>解题思路</span>
+                                                    <div>
+                                                        <ul>
+                                                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                                        </ul>
+                                                    </div>
+        
+                                                </div>
+                                                <div class="a1">
+                                                   3.构建DOM树
+                                                </div>
+                                                <div class="lianxi1-3">
+                                                    <span>解题思路</span>
+                                                    <div>
+                                                        <ul>
+                                                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                                        </ul>
+                                                    </div>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="z-footer" id="footerA">
+                <div class="z-footerWrap">
+                    <div class="z-footer1"><span class="z-upLogo"></span><span></span>
+                        <!-- react-text: 2107 --> &nbsp;培养能力 塑造人才
+                        <!-- /react-text -->
+                    </div>
+                    <div class="z-footer2"><a href="" >联系我们</a><a>意见反馈</a><a
+                            href="" >名师风采</a></div>
+                    <div class="z-jp">Copyright 2017 联想 (北京) 有限公司 京ICP备11035381 | 京公网安备110108007970号</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    shipin.onclick = function () {
+        shipin1.style.display = 'block';
+        jiaoan1.style.display = 'none';
+        beike1.style.display = 'none';
+        xiti1.style.display = 'none';
+    }
+    jiaoan.onclick = function () {
+        jiaoan1.style.display = 'block';
+        shipin1.style.display = 'none';
+        beike1.style.display = 'none';
+        xiti1.style.display = 'none';
+    }
+    beike.onclick = function () {
+        jiaoan1.style.display = 'none';
+        shipin1.style.display = 'none';
+        beike1.style.display = 'block';
+        xiti1.style.display = 'none';
+    }
+    xiti.onclick = function () {
+        jiaoan1.style.display = 'none';
+        shipin1.style.display = 'none';
+        beike1.style.display = 'none';
+        xiti1.style.display = 'block';
+    }
+    span1.onclick = function () {
+        video.src = './1.mp4'
+    }
+    span2.onclick = function () {
+        video.src = './2.mp4'
+    }
+    span3.onclick = function () {
+        video.src = './3.mp4'
+    }
+
+
+
+
+</script>
+</html>
