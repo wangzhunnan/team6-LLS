@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="zhrw9-5.css">
+
+<body>
+    <!-- 导航栏 -->
+    <div class="z-header">
+        <div id="left">
+            <ul class="ul">
+                <li><a href="">我的专业</a></li>
+                <li><a href="">我的课程</a></li>
+                <li><a href="">我的成长</a></li>
+                <li><a href="">我的参与</a></li>
+                <li><a href="">我的考试</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <span>消息提示</span>
+            <span>张润武</span>
+            <span>在线问答</span>
+        </div>
+    </div>
+
+    <!-- 左侧定位列表 -->
+    <div class="logo">
+        <img src="images/logo.png" alt="">
+        <a href="">WEB前端开发</a>
+        <div>第五学期(本学期)</div>
+    </div>
+
+    <!-- 主体上部-->
+    <div class="tfbox">
+        <div class="tf">
+            <div class="title">
+                <p class="p">
+                    <font color="#e4e9ec">
+                        第一阶段HTML基础
+                    </font>
+                </p>
+            </div>
+        </div>
+        <div class="js">
+            <div class='lineTab1'>
+                <div class="lineTab1-1">
+                    <p style="padding-left: 230px;">Web前端基础（HTML5和CSS3)-第一阶段 HTML基础(一)</p>
+                </div>
+                <div style="float: right;margin-right:65px;">
+                    <button>上一课时</button>
+                    <button style="margin-left: 15px;">下一课时</button>
+                </div>
+
+                <a herf="" class="lineTaba">返回</a>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <!-- 选择栏 -->
+    <div clss='biaoqian1'>
+        <div class='biaoqian1-1'>
+            <div class="biao1">
+                <ul>
+                    <li id='shipin'>我要上课</li>
+                    <li id='jiaoan'>查看教案</li>
+                    <li id='beike'>我要备课</li>
+                    <li id='xiti'>添加习题</li>
+                </ul>
+            </div>
+            <div class='biao2'>
+                <span>显示学生界面</span>
+            </div>
+        </div>
+    </div>
+    <div class="zhong">
+        <div class="zhong1">
+            <div style="background:rgb(140, 217, 253);min-height:500px;">
+
+                <div style="height: 300px;padding: 10px 0px 0px 230px;min-height: 700px;">
+                    <div
+                        style='background: rgb(255, 255, 255);overflow: hidden;width: 1013px; margin-left: 120px;position:absolute;'>
+                        <!-- 我要上课的视频 -->
+                        <div id='shipin1'
+                            style='width: 1013px;overflow: hidden;position: relative;min-height: 500px; display: block;'>
+                            <div class="video-1">
+                                <video src="./1.mp4" class="video1" id='video' controls="controls"></video>
+                            </div>
+                            <div style="width: 302px; height: 400px; position: absolute; right: 0px; top: 10px;">
+                                <div
+                                    style='height: 48px;width: 302px;background: rgb(247, 247, 247);margin-bottom: 16px; position: relative;'>
+                                    <div
+                                        style='width: 127px;height: 27px;position: absolute;top: 0px;left: 0px;bottom: 0px;right: 0px;margin: auto;border-bottom: 2px solid rgb(74, 198, 231);'>
+                                        <span
+                                            style="float: left; font-size: 16px; color: rgb(47, 58, 72);margin-left:12px">视频播放列表</span>
+                                    </div>
+                                    <div style='overflow: auto;height: 426px;'>
+                                        <p class="biao-1">
+                                            <span class="biao1-span">
+                                                <span class="span-1" id='span1'>01-基础知识</span>
+                                                <span class="span-2">提前缓存</span>
+                                            </span>
+                                        </p>
+                                        <p class="biao-1">
+                                            <span class="biao1-span">
+                                                <span class="span-1" id='span2'>02-IDE的使用.mp4</span>
+                                                <span class="span-2">提前缓存</span>
+                                            </span>
+                                        </p>
+                                        <p class="biao-1">
+                                            <span class="biao1-span">
+                                                <span class="span-1" id='span3'>03-安装atom.mp4</span>
+                                                <span class="span-2">提前缓存</span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <!-- 查看教案 -->
+                        <div id='jiaoan1'
+                            style='width: 1013px;overflow: hidden;position: relative;min-height: 500px;display: none'>
+                            <img src="./images/jiaoan.png" alt="" style='margin-left:100px;height:100%;width:80%;'>
+                        </div>
+                        <!-- 查看备课 -->
+                        <div id='beike1'
+                            style='width: 1013px;overflow: hidden;position: relative;min-height: 500px;height:100%;width:50%; display: none'>
+                            <img src="./images/beike.png" alt="" style='margin: 50px;'>
+                        </div>
+                        <!-- 添加习题 -->
+                        <div id='xiti1' style="display: none;">
+                                <ul style="list-style: none outside none;">
+                                    <li>添加习题</li>
+                                </ul>
+                                <div class='quesstion' style="height: 500px;width:100%;background: greenyellow; margin-top:<li>添加习题</li> 15px;">
+                                    <ul>
+                                        1.客户端和服务器的工作原理
+                                        <li style="margin-top:10px;">完全解析</li>
+                                        <li type="input">客户端发送请求到服务器.服务器响应客户端</li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="box">
+        <div class="foot">
+            <div class="foot_upper">
+                <img src="./images/lenovo.png" alt="" class="img_left"> | <img src="./images/lenovo-learning.png" alt=""
+                    class="img_right">
+            </div>
+            <div class="foot_middle">
+                <span>联系我们</span>
+                <span>意见反馈</span>
+                <span>名师风采</span>
+            </div>
+            <div class="foot_lower">
+                <span>Copyrigt2017联想(北京)有限公司</span>
+                <span>京ICP备11035381</span>
+                <span>|</span>
+                <span>京公网安备110108007970号</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        shipin.onclick = function () {
+            shipin1.style.display = 'block';
+            jiaoan1.style.display = 'none';
+            beike1.style.display = 'none';
+            xiti1.style.display = 'none';
+        }
+        jiaoan.onclick = function () {
+            shipin1.style.display = 'none';
+            jiaoan1.style.display = 'block';
+            beike1.style.display = 'none';
+            xiti1.style.display = 'none';
+        }
+        beike.onclick = function () {
+            jiaoan1.style.display = 'none';
+            shipin1.style.display = 'none';
+            beike1.style.display = 'block';
+            xiti1.style.display = 'none';
+        }
+        xiti.onclick = function () {
+            jiaoan1.style.display = 'none';
+            shipin1.style.display = 'none';
+            beike1.style.display = 'none';
+            xiti1.style.display = 'block';
+        }
+        span1.onclick = function () {
+            video.src = './1.mp4'
+        }
+        span2.onclick = function () {
+            video.src = './2.mp4'
+        }
+        span3.onclick = function () {
+            video.src = './3.mp4'
+        }
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
