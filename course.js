@@ -26,7 +26,6 @@ for(var i=0;i<title_switchs.length;i++){
             document.querySelector(id).style.display = "block";
             this.className = "addbg";
         }
-        
     }
 }
 
