@@ -174,6 +174,9 @@
 }
 .title_switch_bg .title_switch a{
     text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    height: 48px;
 }
 .addbg{
     background: #F4F4F5;
@@ -227,6 +230,46 @@
     margin-top: 10px;
 }
 
+#switch_page_bg .switch_page_three {
+    width: 900px;
+    height: 500px;
+    background: #f00;
+}
+#switch_page_bg .switch_page_four {
+    width: 900px;
+    height: 500px;
+    background: #0f0;
+}
+#switch_page_bg .switch_page_four .add_text{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #000;
+}
+#switch_page_bg .switch_page_four .text{
+        width: 100%;
+        height: 450px;
+        background: #fff;
+}
+#switch_page_bg .switch_page_four .text .text_upper{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #000;
+}
+#switch_page_bg .switch_page_four .text .text_lower{
+    width: 100%;
+    height: 400px;
+    border: 1px solid #12C7EE;
+}
+/* #switch_page_bg .switch_page_four .text .text_lower .complete_analysis{
+
+} */
+#switch_page_bg .switch_page_four .text .text_lower .complete_analysis img{
+    width: 18px;
+    height: 17px;
+}
+/* #switch_page_bg .switch_page_four .text .text_lower .complete_analysis_text{
+
+} */
 /* 底部 */
 .foot{
     height: 120px;

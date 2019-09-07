@@ -37,16 +37,33 @@ for (var i = 0; i < vios.length; i++) {
         console.log(vioss);
         for (i = 0; i < vioss.length; i++) {
             vioss[i].style.display = "none";
-            }
-            var i = this.href.lastIndexOf("#");
-            console.log(i);
-            var id = this.href.slice(i);
-            console.log(id);
-            document.querySelector(id).style.display = "block";
+        }   
+        var i = this.href.lastIndexOf("#");
+        console.log(i);
+        var id = this.href.slice(i);
+        console.log(id);
+        document.querySelector(id).style.display = "block";
     }
 }
 
+var texts = document.getElementsByClassName('text')[0].querySelectorAll('div a');
+console.log(texts);
+for (var i = 0; i < texts.length; i++) {
+    texts[i].onclick = function () {
+        var textss = document.querySelectorAll('#text_lower>div');
+        console.log(textss);
+        // for (i = 0; i < textss.length; i++) {
+        //     textss[i].style.display = "none";
+        // }
+        
+        var i = this.href.lastIndexOf("#");
+        console.log(i);
+        var id = this.href.slice(i);
+        console.log(id);
+        document.querySelector(id).style.display = "block";
 
+    }
+}
 
 
 
