@@ -253,7 +253,7 @@
 .subject_content .three_content .option .option_text .add_feedback{
     float: right;
     width: 10%;
-    background: #49C0E0;
+    background: rgb(174, 232, 248);
     text-align: center;
 }
 .subject_content .three_content .option .option_text .add_feedback:hover{
@@ -316,7 +316,7 @@
 .subject_content .three_content .option_my .option_text_my .my_feedback{
     float: right;
     width: 10%;
-    background: #49C0E0;
+    background: rgb(143, 217, 238);
     text-align: center;
 }
 .subject_content .three_content .option_my .option_text_my .my_feedback:hover{
@@ -335,5 +335,6 @@
 
 .fankui{
     text-align:justify;
-text-align-last:justify;
+    text-align-last:justify;
+   
 }
