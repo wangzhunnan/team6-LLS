@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./personal.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <div class="logo">
+            <img src="./images/lenovo.png" alt="">
+        </div>
+        <div class="nav_left">
+            <ul>
+                <li>我教的专业</li>
+                <li>我教的课程</li>
+                <li>考试管理</li>
+                <li>学员管理</li>
+                <li>我的贡献</li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <span><img src="./images/user.png" alt=""></span>
+            <span class="name">张兴海</span>
+            <span class="online"><a href="question.html">在线提问</a></span>
+            <span><img src="./images/passwd.png" alt=""></span>
+        </div>
+    </div>
+    <div class="title_bg">
+        <div class="title">
+            个人中心
+        </div>
+    </div>
+    <div class="subject">
+        <div class="subject_nav">
+            <div class="navbg">基本资料</div>
+            <div>修改密码</div>
+            <div>意见反馈</div>
+        </div>
+        <div class="subject_content" id="subject_content">
+            <div class="one_content" style="display: none;">
+                <div class="information_title">
+                    基本资料
+                </div>
+                <div class="information_details">
+                    <ul>
+                        <li class="left">
+                            <ul>
+                                <li>
+                                    <span>姓名</span>
+                                    <span>张兴海</span>
+                                </li>
+                                <li>
+                                    <span>工号</span>
+                                    <span>zhangxh25</span>
+                                </li>
+                                <li>
+                                    <span>出生日期</span>
+                                    <span>1994-09-16</span>
+                                </li>
+                                <li>
+                                    <span>邮箱</span>
+                                    <span>zhangxh25@lenovo.com</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="right">
+                            <ul>
+                                <li>
+                                    <span>职位</span>
+                                    <span>讲师</span>
+                                </li>
+                                <li>
+                                    <span>性别</span>
+                                    <span>男</span>
+                                </li>
+                                <li>
+                                    <span>身份证号</span>
+                                    <span>132201**********77</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="two_content" style="display: none;">
+                <div class="pwd_top">
+                    <div class="top_left">
+                        <span>---</span>
+                        <span><img src="./images/user.png" alt=""></span>
+                        <span>---</span>
+                        <p>修改密码</p>
+                    </div>
+                    <div class="top_right">
+                        <span>---</span>
+                        <span><img src="./images/user.png" alt=""></span>
+                        <span>---</span>
+                        <p>完成</p>
+                    </div>
+                </div>
+                <div class="pwd_bototm">
+                    <p>请输入你的原密码</p>
+                    <input type="password" placeholder=" 请在这里输入你的原密码">
+                    <p>请输入你的新密码</p>
+                    <input type="password" placeholder=" 请在这里输入你的新密码">
+                    <p>
+                        <span>*</span>
+                        <span>密码为8-20位，必须使用大小写字母、数字与特殊符号的组合</span>
+                    </p>
+                    <input type="password" placeholder=" 请在这里输入你的新密码">
+                    <input type="button" value="确认修改">
+                </div>
+            </div>
+            <div class="three_content" style="display: block;">
+                <div class="number">
+                    <div>
+                        我的意见<span>9</span>条
+                    </div>
+                    <div>
+                        已回复<span>6</span>条
+                    </div>
+                    <div>
+                        未回复<span>3</span>条
+                    </div>
+                </div>
+                <div class="option" id="option" style="display: block">
+                    <div class="option_text">
+                        <span>|</span>
+                        <div>我的意见反馈</div>
+                        <div class="add_feedback">新建反馈</div>
+                    </div>
+                    <div class="option_details">
+                        <div class="details_title">
+                            <span>意见</span>
+                            <span>发起时间</span>
+                            <span>状态</span>
+                            <span>操作</span>
+                        </div>
+                        <div class="details_body">
+                            <ul>
+                                <li>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sint!</span>
+                                    <span>2019-9-8</span>
+                                    <span>未回复</span>
+                                    <div>展开问题︾</div>
+                                    <span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nihil.</p>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sint!</span>
+                                    <span>2019-9-8</span>
+                                    <span>未回复</span>
+                                    <div>展开问题︾</div>
+                                    <span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nihil.</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="option_my" id="option_my" style="display: none">
+                    <div class="option_text_my">
+                        <span>|</span>
+                        <div>意见反馈</div>
+                        <div class="my_feedback">我的意见</div>
+                    </div>
+                    <div class="option_details">
+                        <div class="details_title">
+                            <ul>
+                                <li>
+                                    <span>*问题分类:</span>
+                                    <select name="" id="">
+                                        <option value="">用户体验</option>
+                                        <option value="">产品bug</option>
+                                        <option value="">功能建议</option>
+                                        <option value="">问卷建议</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span>*意见:</span>
+                                    <input type="text" id="option_text" placeholder=" 请在这里输入你的问题(60个字符内)">
+                                </li>
+                                <li>
+                                    <span>问题说明:</span>
+                                    <textarea name="" id="options_explain" cols="152" rows="15" placeholder=" 问题背景、条件等详细信息"></textarea>
+                                    <!-- <input type="text" id="options_explain" placeholder="问题背景、条件等详细信息"> -->
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <input type="submit" value="提交反馈">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./personal.js"></script>
+</body>
+</html>
