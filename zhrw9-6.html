@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./zhrw-9-6.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <div class="logo">
+            <img src="./images/lenovo.png" alt="">
+        </div>
+        <div class="nav_left">
+            <ul>
+                <li>我的专业</li>
+                <li>我的课程</li>
+                <li>我的成长</li>
+                <li>我的参与</li>
+                <li>我的考试</li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <span><img src="./images/user.png" alt=""></span>
+            <span class="name">张兴海</span>
+            <span class="online">
+                <!-- <a href="question.html"> -->
+                在线提问
+                <!-- </a> -->
+            </span>
+            <span><img src="./images/passwd.png" alt=""></span>
+        </div>
+    </div>
+    <div class="title_bg">
+        <div class="title">
+            个人中心
+        </div>
+    </div>
+    <div class="subject">
+        <div class="subject_nav">
+            <div class="navbg">基本资料</div>
+            <div>修改密码</div>
+            <div>意见反馈</div>
+        </div>
+        <div class="subject_content" id="subject_content">
+            <div class="one" style="display:none;" id="ziliao">
+                <div class="information_title">
+                    基本资料
+                </div>
+                <div class="information_details">
+                    <ul>
+                        <li class="left">
+                            <ul>
+                                <li>
+                                    <span>姓名</span>
+                                    <span>张兴海</span>
+                                </li>
+                                <li>
+                                    <span>工号</span>
+                                    <span>zhangxh25</span>
+                                </li>
+                                <li>
+                                    <span>出生日期</span>
+                                    <span>1994-09-16</span>
+                                </li>
+                                <li>
+                                    <span>邮箱</span>
+                                    <span>zhangxh25@lenovo.com</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="right">
+                            <ul>
+                                <li>
+                                    <span>职位</span>
+                                    <span>讲师</span>
+                                </li>
+                                <li>
+                                    <span>性别</span>
+                                    <span>男</span>
+                                </li>
+                                <li>
+                                    <span>身份证号</span>
+                                    <span>132201**********77</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="two" style="display: none;background: darkgray;" id="mima">
+                <div class="pwd_top">
+                    <div class="top_left">
+                        <span>---</span>
+                        <span><img src="./images/user.png" alt=""></span>
+                        <span>---</span>
+                        <p>修改密码</p>
+                    </div>
+                </div>
+                <div class="pwd_bototm" style="text-align: center">
+                    <p>请输入你的原密码</p>
+                    <input type="password" placeholder=" 请在这里输入你的原密码">
+                    <p>请输入你的新密码</p>
+                    <input type="password" placeholder=" 请在这里输入你的新密码">
+                    <p>
+                        <span>*</span>
+                        <span>密码为8-20位，必须使用大小写字母、数字与特殊符号的组合</span>
+                    </p>
+                    <input type="password" placeholder=" 请在这里输入你的新密码">
+                    <input type="button" value="确认修改">
+                </div>
+            </div>
+            <div class="three" style="display: block;">
+                <div class="number">
+                    <div>
+                        我的意见<span>9</span>条
+                    </div>
+                    <div>
+                        已回复<span>6</span>条
+                    </div>
+                    <div>
+                        未回复<span>3</span>条
+                    </div>
+                </div>
+                <div class="option" id="option" style="display: block">
+                    <div class="option_text">
+                        <span>|</span>
+                        <div>我的意见反馈</div>
+                        <div class="add_feedback">新建反馈</div>
+                    </div>
+                    <div class="option_details">
+                        <div class="details_title">
+                            <span>意见</span>
+                            <span>发起时间</span>
+                            <span>状态</span>
+                            <span>操作</span>
+                        </div>
+                        <div class="details_body">
+                            <ul>
+                                <li>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+                                        sint!</span>
+                                    <span>2019-9-8</span>
+                                    <span>未回复</span>
+                                    <div>展开问题︾</div>
+                                    <span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nihil.</p>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+                                        sint!</span>
+                                    <span>2019-9-8</span>
+                                    <span>未回复</span>
+                                    <div>展开问题︾</div>
+                                    <span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nihil.</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="option_my" id="option_my" style="display: none">
+                    <div class="option_text_my">
+                        <span>|</span>
+                        <div>意见反馈</div>
+                        <div class="my_feedback">我的意见</div>
+                    </div>
+                    <div class="option_details">
+                        <div class="details_title">
+                            <ul>
+                                <li>
+                                    <span>*问题分类:</span>
+                                    <select name="" id="">
+                                        <option value="">用户体验</option>
+                                        <option value="">产品bug</option>
+                                        <option value="">功能建议</option>
+                                        <option value="">问卷建议</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span>*意见:</span>
+                                    <input type="text" placeholder=" 请在这里输入你的问题(60个字符内)">
+                                </li>
+                                <li>
+                                    <span>问题说明:</span>
+                                    <textarea name="" id="" cols="150" rows="10" placeholder="问题背景、条件等详细信息"></textarea>
+                                    <input type="text" placeholder="问题背景、条件等详细信息">
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <input type="submit" value="提交反馈">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        //导航栏切换
+        var navs = document.getElementsByClassName('subject_nav')[0].querySelectorAll('div');
+        // console.log(navs);
+        var contents = document.querySelectorAll('#subject_content>div');
+        // console.log(contents);
+        for (var i = 0; i < navs.length; i++) {
+            navs[i].index = i;
+            // console.log(i);
+            navs[i].onclick = function () {
+                if (this.className == "navbg") {
+                    this.className = "";
+                } else {
+                    var navbgs = document.querySelector('.navbg');
+                    if (navbgs) {//关闭其他导航样式
+                        navbgs.className = "";
+                    }
+                    for (var i = 0; i < contents.length; i++) {//关闭其他内容
+                        contents[i].style.display = 'none';
+                    }
+
+                    this.className = "navbg";
+                    contents[this.index].style.display = "block";
+                }
+            }
+        }
+
+        //意见栏切换
+        var adds_feedback = document.getElementsByClassName('option_text')[0].querySelector('.add_feedback');
+        console.log(adds_feedback);
+        var options = document.querySelector('#option');
+        console.log(options);
+        var my_feedback = document.getElementsByClassName('option_text_my')[0].querySelector('.my_feedback');
+        console.log(my_feedback);
+        var options_my = document.querySelector('#option_my');
+        console.log(options_my);
+        adds_feedback.onclick = function () {
+            if (options.style.display == 'block') {
+                options.style.display = 'none';
+                options_my.style.display = 'block';
+            } else {
+                options.style.display = 'block';
+                options_my.style.display = 'none';
+            }
+        }
+        my_feedback.onclick = function () {
+            if (options.style.display == 'block') {
+                options.style.display = 'none';
+                options_my.style.display = 'block';
+            } else {
+                options.style.display = 'block';
+                options_my.style.display = 'none';
+            }
+        }
+
+
+        //展开问题部分
+        var divs = document.getElementsByClassName('details_body')[0].querySelectorAll('li>div');
+        console.log(divs);
+        var lis = document.getElementsByClassName('details_body')[0].querySelectorAll('li');
+        console.log(lis);
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].index = i;
+            console.log(i);
+            divs[i].onclick = function () {
+                if (lis[this.index].style.height == "50px") {
+                    lis[this.index].style.height = "25px";
+                } else {
+                    lis[this.index].style.height = "50px";
+                }
+            }
+        }
+
+
+    </script>
+    <!-- <script>
+        ziliao.onclick = function () {
+            shipin1.style.display = 'block';
+            mima.style.display = 'none';
+            yijian.style.display = 'none';
+        }
+        mima.onclick = function () {
+            ziliao.style.display = 'none';
+            mima.style.display = 'block';
+            yijian.style.display = 'none';
+        }
+        yijian.onclick = function () {
+            ziliao.style.display = 'none';
+            mima.style.display = 'none';
+            yijian.style.display = 'block';
+        }
+    </script> -->
+
+</html>
