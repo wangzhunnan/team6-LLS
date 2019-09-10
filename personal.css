@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* 导航栏 */
+.nav{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    background: #fff;
+}
+.nav .logo{
+    width: 20%;
+    position: absolute;
+    left: 120px;
+}
+.nav .logo img{
+    width: 120px;
+    height: 34px;
+    margin-top: 3px;
+}
+
+.nav .nav_left{
+    width: 35%;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 13px;
+    color: #505050;
+    position: absolute;
+    left: 430px;
+}
+.nav .nav_left li{
+    float: left;
+    list-style: none;
+    margin-left: 30px;
+}
+.nav .nav_left li a{
+    text-decoration: none;
+}
+.nav .nav_left li:hover{
+    color: #49C0E0;
+    cursor: pointer;
+}
+.nav .nav_right{
+    width: 20%;
+    line-height: 40px;
+    font-size: 13px;
+    position: absolute;
+    right: 130px;
+}
+.nav .nav_right span{
+    margin-left: 28px;
+    position: relative;
+}
+.nav .nav_right .name{
+    color: #A3A3A4;
+}
+.nav .nav_right .online a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav .nav_right .online{
+    background: #49C0E0;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+}
+.nav .nav_right img{
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    right: -10px;
+    top: 0px;
+}
+/* 标题 */
+.title_bg{
+    width: 100%;
+    border: 1px solid #fff;
+}
+.title{
+    width: 100%;
+    height: 70px;
+    background: #63A2F5;
+    margin-top: 39px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+}
+/* 主体部分 */
+.subject .subject_nav{
+    width: 100%;
+    height: 30px;
+    background: #D8D8DE;
+    line-height: 30px;
+    margin-top: -1px;
+}
+.subject .subject_nav div{
+    display: inline-block;
+    width: 30%;
+    margin-left: 3%;
+    text-align: center;
+    height: 30px;
+}
+.subject .subject_nav div:hover{
+    cursor: pointer;
+
+}
+
+.navbg{
+    background: #fff;
+    color: #49C0E0;
+}
+
+/* 第一个内容 */
+.subject_content .one_content{
+    width: 85%;
+    height: 500px;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+.subject_content .one_content .information_title{
+    width: 7%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-left: 3px solid #49C0E0;
+}
+.subject_content .one_content .information_details{
+    width: 80%;
+}
+.subject_content .one_content .information_details ul li{
+    list-style: none;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.subject_content .one_content .information_details .left{
+    float: left;
+    width: 49%;
+}
+.subject_content .one_content .information_details .left li{
+    border: 1px dashed #999;
+}
+.subject_content .one_content .information_details .right{
+    float: right;
+    width: 49%;
+}
+.subject_content .one_content .information_details .right li{
+    border: 1px dashed #999;
+}
+.subject_content .one_content .information_details ul li span{
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+}
+.subject_content .one_content .information_details ul li span:first-child{
+    background: #D8D8DE;
+    display: inline-block;
+    width: 30%;
+    border-right: 1px dashed #999;
+}
+.subject_content .one_content .information_details ul li span:last-child{
+    background: #fff;
+    display: inline-block;
+    width: 68%;
+}
+/* 第二个内容 */
+.subject_content .two_content{
+    width: 85%;
+    height: 500px;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+.subject_content .two_content .pwd_top{
+    width: 36%;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+.subject_content .two_content .pwd_top div{
+    display: inline-block;
+}
+.subject_content .two_content .pwd_top img{
+    width: 12px;
+    height: 13px;
+}
+.subject_content .two_content .pwd_top .top_left{
+    font-size: 13px;
+    color: #49C0E0;
+}
+.subject_content .two_content .pwd_top .top_right{
+    font-size: 13px;
+    margin-left: 10px;
+    color: #A3A3A4;
+}
+.subject_content .two_content .pwd_bototm{
+    width: 36%;
+    height: 300px;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.subject_content .two_content .pwd_bototm p,input{
+    margin-bottom: 7px;
+}
+.subject_content .two_content .pwd_bototm input{
+    width: 80%;
+    height: 36px;
+    border: 1px solid #A3A3A4;
+    border-radius: 5px;
+}
+.subject_content .two_content .pwd_bototm p:nth-child(5){
+    font-size: 12px;
+    color: #A3A3A4;
+}
+.subject_content .two_content .pwd_bototm input:last-child{
+    margin-top: 20px;
+    background: #49C0E0;
+}
+
+/* 第三个内容 */
+.subject_content .three_content{
+    width: 75%;
+    height: 500px;
+    margin: 1% auto;
+}
+.subject_content .three_content .number{
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+.subject_content .three_content .number div{
+    display: inline-block;
+    width: 30%;
+}
+/* 意见新建部分 */
+.subject_content .three_content .option_text{
+    height: 40px;
+    line-height: 35px;
+}
+.subject_content .three_content .option_text span{
+    color: #49C0E0;
+    font-size: 15px;
+}
+.subject_content .three_content .option_text div{
+    display: inline-block;
+}
+.subject_content .three_content .option .option_text .add_feedback{
+    float: right;
+    width: 10%;
+    background: #49C0E0;
+    text-align: center;
+}
+.subject_content .three_content .option .option_text .add_feedback:hover{
+    cursor: pointer;
+}
+.subject_content .three_content .option .option_details{
+    width: 100%;
+    height: 300px;
+}
+.subject_content .three_content .option .option_details .details_title{
+    width: 100%;
+    height: 40px;
+    background: #A3A3A4;
+    line-height:40px;
+}
+.subject_content .three_content .option .option_details .details_title span{
+    display: inline-block;
+    width: 9%;
+    text-align: center;
+    font-size: 13px;
+}
+.subject_content .three_content .option .option_details .details_title span:first-child{
+    width: 68%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.subject_content .three_content .option .option_details .details_body li{
+    list-style: none;
+    height: 25px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.subject_content .three_content .option .option_details .details_body div{
+    display: inline-block;
+    color: #63A2F5;
+    width: 9%;
+    text-align: center;
+}
+.subject_content .three_content .option .option_details .details_body div:hover{
+    cursor: pointer;
+}
+.subject_content .three_content .option .option_details .details_body li span{
+    display: inline-block;
+    font-size: 13px;
+    color: #A3A3A4;
+    width: 9%;
+    text-align: center;
+}
+.subject_content .three_content .option .option_details .details_body li span:first-child{
+    width: 68%;
+    text-align: left;
+    padding-left: 10px;
+}
+.subject_content .three_content .option .option_details .details_body li span:last-child{
+    width: 68%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+/* 我的意见部分 */
+.subject_content .three_content .option_text_my{
+    height: 30px;
+    line-height: 30px;
+}
+.subject_content .three_content .option_text_my span{
+    color: #49C0E0;
+    font-size: 15px;
+}
+.subject_content .three_content .option_text_my div{
+    display: inline-block;
+}
+.subject_content .three_content .option_my .option_text_my .my_feedback{
+    float: right;
+    width: 10%;
+    background: #49C0E0;
+    text-align: center;
+}
+.subject_content .three_content .option_my .option_text_my .my_feedback:hover{
+    cursor: pointer;
+}
+.subject_content .three_content .option_my .option_details li{
+    list-style: none;
+    margin-left: 10px;
+    font-size: 13px;
+}
+.subject_content .three_content .option_my .option_details span{
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    text-align: right;
+}
+.subject_content .three_content .option_my .option_details select{
+    width: 130px;
+    height: 32px;
+}
+.subject_content .three_content .option_my .option_details #option_text{
+    width: 86%;
+    height: 32px;
+}
+.subject_content .three_content .option_my .option_details li:last-child input{
+    background: #49C0E0;
+    border: none;
+    width: 80px;
+    height: 35px;
+}
+.subject_content .three_content .option_my .option_details li:last-child input:hover{
+    cursor: pointer;
+}
