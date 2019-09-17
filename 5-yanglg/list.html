@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="./packages/index.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <el-heater style="height: 100px;line-height: 100px;text-align: center;">
+            <h2 id="top">我的个人博客</h2>
+        </el-heater>
+        <el-row style="width: 100%; border-top: 1px solid rgb(238,238,238);border-bottom: 1px solid rgb(238,238,238);">
+            <ul style="overflow: hidden;padding-left: 50px;">
+
+                <li style="float: left;list-style: none; margin-right: 20px;cursor: pointer;">
+                    <a href="./index.html">首页</li></a>
+                <li style="float: left;list-style: none; margin-right: 20px;cursor: pointer;">
+                    <a href=""></a>文章列表</li></a>
+                <li style="float: left;list-style: none; margin-right: 20px;cursor: pointer;">
+                    <a href=""></a>登陆</li></a>
+                <li style="float: left;list-style: none; margin-right: 20px;cursor: pointer;">
+                    <a href=""></a>注册</li></a>
+            </ul>
+        </el-row>
+        <el-main style="width: 100%; overflow: hidden;">
+
+            所有文章
+            </h2>
+            <ul>
+                <li style=" width: 100%; height:50px;  border-left: 2px solid#00AA88;">
+                    <div>
+                        我自横刀向天笑,自留肝胆两昆仑
+                    </div>
+                    <div style="margin-left: 810px;margin-top: -20px;">
+                        2018/12/4
+                    </div>
+                </li>
+                <li style=" width: 100%;height:50px;   border-left: 2px solid#00AA88;">
+                    <div>
+                        我自横刀向天笑,自留肝胆两昆仑
+                    </div>
+                    <div style="margin-left: 810px;margin-top: -20px;">
+                        2018/12/4
+                    </div>
+                </li>
+                <li style=" width: 100%;height:50px;   border-left: 2px solid#00AA88;">
+                    <div>
+                        我自横刀向天笑,自留肝胆两昆仑
+                    </div>
+                    <div style="margin-left: 810px;margin-top: -20px;">
+                        2018/12/4
+                    </div>
+                </li>
+                <li style=" width: 100%;height:50px;   border-left: 2px solid#00AA88;">
+                    <div>
+                        我自横刀向天笑,自留肝胆两昆仑
+                    </div>
+                    <div style="margin-left: 810px;margin-top: -20px;">
+                        2018/12/4
+                    </div>
+                </li>
+                <li style=" width: 100%;height:50px;   border-left: 2px solid#00AA88;">
+                    <div>
+                        我自横刀向天笑,自留肝胆两昆仑
+                    </div>
+                    <div style="margin-left: 810px;margin-top: -20px;">
+                        2018/12/4
+                    </div>
+                </li>
+                <li style=" width: 100%; border-left: 2px solid#00AA88;">
+                    <div>
+                        我自横刀向天笑,自留肝胆两昆仑
+                    </div>
+                    <div style="margin-left: 810px;margin-top: -20px;">
+                        2018/12/4
+                    </div>
+                </li>
+            </ul>
+            <!-- 按钮组-->
+            <el-pagination style="text-align: center;margin-top: 70px;margin-right: 520px" background
+                layout="prev, pager, next" :total="50">
+            </el-pagination>
+        </el-main>
+        <div class="list_r" style=" width: 25%;
+        height: 400px;
+        float: right;
+        margin-right: 50px;
+        border: 1px solid #999;
+        margin-top: -413px;">
+            <div class="about" style="width: 160px;
+            line-height: 40px;
+            margin:0 auto;
+            position: relative;
+            top: -20px;
+            background: #fff;">ABOUT ME</div>
+            <div class="r_img" style=" width: 70%;
+            height: 200px;
+            margin: 0 auto; ">
+                <img src="./i/4.jpg" alt="" style="width: 100%;
+                height: 100%;">
+            </div>
+            <p class="p1" style="height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-weight: 900;">小学生</p>
+            <p class="p2" style="line-height: 20px;
+            text-align: center;
+            padding: 0 10px;">球场上没有一件事是一个三分解决不了的，如果有那就两个。
+            ---史蒂芬.库里</p>
+        </div>
+    </div>
+    </div>
+    <!--页面底部-->
+    <el-footer>
+        <div class="foot" style="margin-top: 80PX;
+        margin-bottom: 80px;
+        height: 80px;
+        line-height: 80px;
+        background: #FF00FF;
+        color: #fff;
+        text-align: center;">
+            &copy; 2019 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, quibusdam.
+        </div>
+
+        </div>
+</body>
+<!-- import Vue before Element -->
+<script src="./packages/vue.js"></script>
+<!-- import JavaScript -->
+<script src="./packages/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return { visible: false }
+        }
+    })
+</script>   
+
+</html>

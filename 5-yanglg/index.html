@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <title>主页</title>
+    <link rel="stylesheet" href="./packages/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <el-container>
+            <el-header style="height: 220px;">
+                <el-row style="height: 40px; background-color: #cacaca">    
+                   <el-col :span="2">
+                        <el-radio-group v-model="direction" label="">
+                                 
+                        </el-radio-group>
+                        <el-button @click="drawer = true" type="primary" style="margin-left: 16px;">
+                                <i class="el-icon-s-unfold"></i>
+                        </el-button>
+                        <el-drawer style="height:400%"  
+                            title="教你学习"    
+                            :visible.sync="drawer"
+                            :direction="direction"
+                            :before-close="handleClose"
+                            placement="top-start"
+                            trigger="hover"
+                            content="这是一段内容,这是一段内容,这是一段内容,这是一段内容。">
+                            <el-button ><span>HTML</span></el-button>
+                            <el-button ><span>PHP</span></el-button>
+                            <el-button><span>CSS</span></el-button>
+                            <el-button><span>JavaScript</span></el-button>
+                            
+                        </el-drawer>
+                  </el-col>
+                    <el-col :span="5" :offset="17">
+                        <el-button type="text">Home</el-button>
+                        <el-button type="text" disabled><a href="">关于我们</el-button></a> 
+                        <el-button type="text" disabled><a href="./login.html">登录</el-button></a>
+                        <el-button type="text" disabled><a href="">注册</el-button></a>
+                    </el-col>
+                </el-row>
+                <el-carousel :interval="2000" type="card" height="200px;margin-right:50px;dispaly:none;">
+                        <el-carousel-item v-for="item in 3" :key="item">
+                          <h3 class="medium" style="color: #FF00FF;margin-left: 100px">看小学生</h3>
+                          <img src="./i/9.jpg" alt="" style="width: 246px;height:162px;margin-right: 20px">
+                        </el-carousel-item>
+                      </el-carousel>
+                    </template>
+                    
+                    <style>
+                      .el-carousel__item h3 {
+                        color: #475669;
+                        opacity: 1;
+                        line-height: 300px;
+                        margin: 0;
+                      }
+                      
+                      .el-carousel__item:nth-child(2n) {
+                        background-color: #99a9bf;
+                      }
+                      
+                      .el-carousel__item:nth-child(2n+1) {
+                        background-color: #d3dce6;
+                      }
+                      </style>
+            </el-header>
+            <el-main style="height: 1000px; padding: 0; background-color: #fff;">
+                <el-row style="height: 43.6px; text-align: center;">    
+                    <el-col :span="4"><el-button type="text"> </el-button></el-col>
+                    <el-col :span="2"><el-button style="font-size: 18px;" type="text">首页</el-button></el-col>
+                    <el-col :span="2"><el-button style="font-size: 18px;" type="text"><a href="./list.html">文章列表</el-button></el-col></a>
+                    <el-col :span="2"><el-button style="font-size: 18px;" type="text">个人资料</el-button></el-col>
+                    <el-col :span="2"><el-button style="font-size: 18px;" type="text">兴趣爱好</el-button></el-col>
+                    <el-col :span="2"><el-button style="font-size: 18px;" type="text">我的生活</el-button></el-col>
+                    <el-col :span="2"><el-button style="font-size: 18px;" type="text">了解更多</el-button></el-col>
+                    <el-col :span="2"><el-button style="font-size: 18px;" type="text">联系信息</el-button></el-col>
+                    <el-col :span="6"><el-button type="text"> </el-button></el-col>
+                </el-row>
+                <el-row style="height: 956.4px;">
+                    <el-col :span="4" style="height: 956.4px;"></el-col>
+                    <el-col :span="13" style="height: 956.4px;">
+                        <el-row><img src="./i/f97.jpg" alt="" style="width: 78%;height:480px; margin-top: 60px"></el-row>
+                        <el-row>
+                            <el-col :span="4">   
+                                
+                            </el-col>
+                            <el-col :span="16" style="height: 200px; background-color: #fff; color: #000">
+                                <el-row style="text-align: center; font-size: 18px; margin-top: 90px;margin-right: -85px;">曾经的少年</el-row>
+                                <el-row style="margin-right:50px;">
+                                    <p style="margin-right:-170px;color: gold;">曾经，我们走过了花样青春，在有限的青葱岁月中流失了曾经只属于我们的纯真童年；曾经，我们度过了繁华四季，在交替的春秋冬夏里轮回着曾经拥有的那一个美丽季节；曾经，我们历经了沧桑风雨，在起落的朝阳夕日下洗礼着曾经承受的一次次磨砺痕迹。</p>
+                                    <p style="margin-right:-170px;color: gold;">曾经的青春，如梦从幻到醒、如花从开到谢、如风从来到去……用他们的真美柔情谱写了一篇充满活力激情的歌谣。曾经，有无数天真无邪的笑容出现在我们的视野中，无数五彩斑斓的画面绘织在我们的生命里，无数纯洁无暇的记忆烙印在我们的脑海深处……青春时光在无意中流失，我们在慢慢的长大……到最后这一切的一切，像一条途经的湍急河流，淘淘之水拍打在我们懵懂的心上，那声音好比青春岁月激情的歌唱，而这歌声如雾一般渐渐消失在浩瀚的天际。我们已经忘记，忘了在哪一天的那张充满笑容的脸上那纯情的眼神，淡淡的模糊在远去的时光轨道上。曾经，我们拥有那稚气的心灵，纯情打开了所有心灵的门窗，让我们充实着青春的空间，但这只是一个过程，而这个过程断然为会停留在在时光的原处，早已被突来的一阵风儿无声地卷走。剩下的只有刻在那一片残墙上若隐若现的记忆笑脸和那深情凝望着我们的眼神……</p>
+                                    <p style="margin-right:-170px;color: gold;">曾经的那张白纸，已勾勒出我们人生这条路上的轮廓与轨迹，路的另一端那将是更漫长的旅程，路途的风景将由我们自己来描绘，而路途的长短也由我们自己来决定。
+                      曾经的就让他过去吧，我们就像是被风吹到水中的沙粒，早就坠落沉淀到我们无意识的记忆深渊之中，在我们的人生中，他们将都会以另一种姿态活在我们的故事里。</p>
+                                    <p style="margin-right:-170px;color: gold;">在未来的日子里，我们将会有更艰难的选择，而我们要做的就是带着选择继续上路。但我们一定要记住，宁可带着伤痛选择放弃，决不要冒然轻意地放弃选择。理想终会勾起灵魂的目标，在我们人生的泥泞中也不会丢弃前方那条平坦而宽阔的理想之路……</p>
+                                    <p style="margin-right:-170px;color: gold;">最好的我们</p>
+                                </el-row>
+                            </el-col>
+                        </el-row>
+                    </el-col>
+                    <el-col :span="7" style="height: 956.4px;">
+                        <el-row style="font-size: 18px; margin: 20px 70px;margin-left: 120px;">关于我们</el-row>
+                        <el-row><img src="./i/1.jpg" alt="" style="width: 133px;height:123px;margin-left: 80px;"></el-row>
+                        <hr>
+                        <el-row style="font-size: 14px; margin: 20px 20px; width: 200px;margin-left: 50px;color: red;">
+                            从我同学给我唱第一首谦谦的歌时我就觉得特别好听，从那时我就非常喜欢薛之谦的歌。------<a href="#">My Love 薛之谦</a><br />三年的时光，薛之谦的歌还是最好的。
+                        </el-row>
+
+                        <el-row style="font-size: 18px; margin: 20px 70px;margin-left: 110px;">全部都是回忆</el-row>
+                        <hr>
+                        <el-row >
+                            <ul style="font-size: 15px; margin: 20px 50px; width: 200px;color: #FF00FF;text-decoration: none;margin-left: 100px;">
+                                <li><a href="#">我爱的人是我的家人</a></li>
+                                <li><a href="#">我爱看的动漫是黑子的篮球</a></li>
+                                <li><a href="#">我喜欢的明星是张一山</a></li>
+                                <li><a href="#">我喜欢的男歌手是薛之谦</a></li> 
+
+                            </ul>
+                        </el-row>
+
+                        <el-row style="font-size: 18px; margin: 20px 70px;margin-left: 120px;">NO.1</el-row>
+                        <hr>
+                        <el-row style=" width: 200px">
+                            <div style="margin: 20px 20px; width: 190px; height: 100px;">
+                                <div style="font-size: 14px;">
+                                    <img src="./i/2.jpg" alt="" style="width:115px;height:102px;">
+                                    <img src="./i/3.jpg" alt="" style="width:137px;height:100px;margin-left: 50px;">
+                                    <img src="./i/4.jpg" alt="" style="width:140px;height:112px;margin-left: 84px;">
+                                    <img src="./i/5.jpg" alt="" style="width:160px;height:107px;margin-left: 123px;">
+                                    <img src="./i/6.jpg" alt="" style="width:140px;height:121px;margin-left: 145px;">
+                                </div>
+                            </div>
+                        </el-row>
+                    </el-col>
+                </el-row>
+            </el-main>
+            <el-footer style="height: 100px;"></el-footer>
+        </el-container>
+    </div>
+</body>
+
+<!-- import Vue before Element -->
+<script src="./packages/vue.js"></script>
+<!-- import JavaScript -->
+<script src="./packages/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return { 
+                drawer: false,
+        direction: '',
+             }
+        },
+        methods: {
+      handleClose(done) {
+        this.$confirm('确认关闭？')
+          .then(_ => {
+            done();
+    })
+    .catch(_ => {});
+      }
+    }
+    });
+</script>
+
+</html>
