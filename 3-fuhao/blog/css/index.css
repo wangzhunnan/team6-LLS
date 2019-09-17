@@ -1,0 +1,38 @@
+.el-aside {
+  /* background:red; */
+  /* height: 500px; */
+}
+.el-icon-s-unfold,.el-icon-s-fold {
+  font-size: 30px;
+  transition: color .15s linear;
+}
+.el-icon-s-unfold:hover,.el-icon-s-fold:hover {
+  color:#5cb6ff;
+  cursor: pointer;
+}
+
+.el-header {
+  /* background: skyblue; */
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight:bold;
+}
+.main_tit {
+  height: 80px;
+  line-height: 80px;
+  font-size: 30px;
+  color: #409EFF;
+  padding-left: 80px;
+}
+
+.el-footer {
+  /* background: greenyellow; */
+  text-align: center;
+  line-height: 60px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.el-card {
+  cursor: pointer;
+}

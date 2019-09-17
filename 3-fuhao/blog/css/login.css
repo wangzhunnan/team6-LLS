@@ -1,0 +1,91 @@
+
+body {
+  background: url('../images/f10.jpg');
+  background-size: cover;
+}
+.el-header .el-button {
+  background: none !important;
+  transition: all .3s ease-in;
+  color: #ffffff;
+  border-color:#fff;
+}
+
+.el-header .el-button:hover {
+  background-color: #0e90d2 !important;
+  border-color:#0e90d2;
+  
+}
+.el-header .el-button:nth-child(2) {
+  margin-left: 2px;
+}
+.el-main {
+  margin-top: 80px;
+}
+.el-main .el-row .el-col:nth-child(1) {
+  text-align: center;
+  line-height: 60px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 36px;
+  color:#fff;
+  animation: titAnimation .5s ease-in;
+}
+.el-main .el-row .el-col:nth-child(2) {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.el-main .el-row .el-col:nth-child(2) .el-input {
+  animation: inputAnimation .7s ease-in;
+}
+.el-main .el-row .el-col:nth-child(3) .el-input {
+  animation: inputAnimation .9s ease-in;
+}
+.el-main .el-row .el-col:nth-child(4) .el-button {
+  animation: btnAnimation .7s ease-in;
+}
+.el-main .el-row .el-button {
+  width: 100%;
+  margin-top: 30px;
+}
+.el-footer {
+  color:#fff;
+  line-height: 60px;
+  height: 60px;
+  font-size: 16px;
+  position:fixed;
+  left: 36%;
+  bottom:10px;
+}
+
+@keyframes titAnimation {
+  0% {
+    opacity: 0;
+    margin-left: -24%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 16%;
+  }
+}
+
+@keyframes inputAnimation {
+  0% {
+    opacity: 0;
+    margin-left: -500px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+@keyframes btnAnimation {
+  0% {
+    opacity: 0;
+    margin-top: 100px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 30px;
+  }
+}

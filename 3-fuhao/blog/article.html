@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>文章列表页</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./css/article.css">
+</head>
+
+<body>
+  <div id="app">
+    <el-container>
+      <el-header>
+        我的个人博客
+      </el-header>
+      <el-container>
+        <el-main>
+          <i class="el-icon-s-unfold" @click="drawTogg" v-if="!visibleDraw"></i>
+          <i class="el-icon-s-fold" @click="drawTogg" v-else></i>
+          <!-- 侧边栏导航 -->
+          <el-drawer :visible="visibleDraw" direction="ltr" :before-close="drawTogg" size="20%">
+            <span slot="title">欢迎来到我的博客</span>
+            <div class="demo-drawer__content">
+              <el-menu mode="vertical" default-active="1">
+                <el-menu-item index="1">
+                  <i class="el-icon-s-home"></i>
+                  <span slot="title">首页</span>
+                </el-menu-item>
+                <el-submenu index="2">
+                  <template slot="title">
+                    <i class="el-icon-s-order"></i>
+                    <span slot="title">文章列表</span>
+                  </template>
+                  <el-menu-item-group>
+                    <el-menu-item v-for="(item,index) in list" :key="index" :index="'2-' + index">{{item.tit}}
+                    </el-menu-item>
+                  </el-menu-item-group>
+                </el-submenu>
+                <el-menu-item index="3">
+                  <i class="el-icon-user-solid"></i>
+                  <span slot="title">
+                    <el-link href="./login.html">登录</el-link>
+                  </span>
+                </el-menu-item>
+                <el-menu-item index="4">
+                  <i class="el-icon-user"></i>
+                  <span slot="title">注册</span>
+                </el-menu-item>
+              </el-menu>
+            </div>
+          </el-drawer>
+
+          <!-- 主要内容 -->
+          <div class="main_tit">
+            文章列表
+          </div>
+
+          <el-table :data="list">
+            <el-table-column label="日期" width="180">
+              <template slot-scope="scope">
+                <i class="el-icon-time"></i>
+                <span style="margin-left: 10px">{{ scope.row.time }}</span>
+              </template>
+            </el-table-column>
+            <el-table-column label="标题">
+              <template slot-scope="scope">
+                <el-popover trigger="hover" placement="top">
+                  <p>{{ scope.row.desc }}</p>
+                  <div slot="reference" class="name-wrapper">
+                    {{ scope.row.tit }}
+                  </div>
+                </el-popover>
+              </template>
+            </el-table-column>
+          </el-table>
+
+        </el-main>
+
+        <!-- 关于我 -->
+        <el-aside>
+          <!-- <el-divider content-position="center">关于我</el-divider> -->
+
+        </el-aside>
+
+      </el-container>
+      <el-pagination background layout="prev, pager, next" :total="100">
+        <div class="block">
+         
+        </div>
+        <el-avatar shape="square" :size="50" src="./images/01.jpg"></el-avatar>
+      </el-pagination>
+      <el-footer>
+        <div class="footer-tit">© 2015 AllMobilize, Inc. Licensed under MIT license. Made with love By LWXYFER</div>
+      </el-footer>
+    </el-container>
+  </div>
+</body>
+<script src="./vue.js"></script>
+<script src="./index.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        visibleDraw: false,
+        list: [{
+            img: './images/b1.jpg',
+            tit: '我本楚狂人，凤歌笑孔丘',
+            time: '2019/8/9',
+            desc: '我们一直在坚持着，不是为了改变这个世界，而是希望不被这个世界所改变。'
+          },
+          {
+            img: './images/b2.jpg',
+            tit: '世间所有的相遇，都是久别重逢',
+            time: '2019/8/19',
+            desc: '你可以选择在原处不停地跟周遭不解的人解释你为何这么做，让他们理解你，你可以选择什么都不讲，自顾自往前走。'
+          },
+          {
+            img: './images/b3.jpg',
+            tit: '陌上花开，可缓缓归矣',
+            time: '2019/7/6',
+            desc: '那时候刚好下着雨，柏油路面湿冷冷的，还闪烁着青、黄、红颜色的灯火。我们就在骑楼下躲雨，看绿色的邮筒孤独地站在街的对面'
+          },
+          {
+            img: './images/f22.jpg',
+            tit: '爱自己是终生浪漫的开始',
+            time: '2019/6/9',
+            desc: '我不想成为一个庸俗的人。十年百年后，当我们死去，质疑我们的人同样死去，后人看到的是裹足不前、原地打转的你，还是一直奔跑、走到远方的我？'
+          }
+        ]
+      }
+    },
+    methods: {
+      drawTogg() {
+        this.visibleDraw = !this.visibleDraw;
+      }
+    }
+  })
+</script>
+
+</html>

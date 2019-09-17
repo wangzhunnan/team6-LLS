@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登录</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+  <div id="app">
+    <el-container>
+      <el-header>
+        <el-row>
+          <el-col :span="6" :offset="18">
+            <el-button type="primary" plain>登录</el-button>
+            <el-link href="./index.html" style='color:#fff'><el-button type="primary" plain>返回首页</el-button></el-link>
+          </el-col>
+        </el-row>
+      </el-header>
+      <el-main>
+        <el-row>
+          <el-col :span="16" :offset="4">
+            用户登录
+          </el-col>
+          <el-col :span="6" :offset="9">
+            <el-input placeholder="请输入用户名" clearable suffix-icon="el-icon-s-custom" v-model="username"></el-input>
+          </el-col>
+          <el-col :span="6" :offset="9">
+              <el-input placeholder="请输入密码" type="password" show-password suffix-icon="el-icon-s-marketing" v-model="password"></el-input>
+          </el-col>
+          <el-col :span="6" :offset="9">
+              <el-button type="primary">注册</el-button>
+          </el-col>
+        </el-row>
+      </el-main>
+      <el-footer>
+          <div class="foot">© 2014 AllMobilize, Inc. Licensed under MIT license.</div>
+      </el-footer>
+    </el-container>
+
+  </div>
+</body>
+<script src="./vue.js"></script>
+<script src="./index.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        username: '',
+        password: ''
+      }
+    }
+  })
+</script>
+
+</html>
