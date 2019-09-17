@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>index</title>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="./elementUI/index.css">
+    <link rel="stylesheet" href="./css/index1.css">
+</head>
+
+<body>
+    <div id="app">
+        <el-row class="title">
+            <el-col :span="2" :offset="11">
+                我的个人博客
+            </el-col>
+        </el-row>
+        <el-row class="nav">
+            <el-col :span="2" offset="2">
+                <el-button type="text"><a href="./index1.html" style="text-decoration: none;color: #409EFF">首页</a></el-button>
+            </el-col>
+            <el-col :span="2" offset="1">
+                <el-button type="text"><a href="./list1.html" style="text-decoration: none;color: #409EFF">文章列表</a></el-button>
+            </el-col>
+            <el-col :span="2" offset="1">
+                <el-button type="text"><a href="./login1.html" style="text-decoration: none;color: #409EFF">登录</a></el-button>
+            </el-col>
+            <el-col :span="2" offset="1">
+                <el-button type="text">注册</el-button>
+            </el-col>
+            <el-col :span="4" offset="2">
+                <el-input placeholder="请输入文章" prefix-icon="el-icon-search" v-model="input">
+                </el-input>
+            </el-col>
+        </el-row>
+        <el-row>
+            <el-col :span="12" offset="2">
+                <el-row>
+                    <!-- <div class="main_left"><img src="./i/b1.jpg" alt=""></div> -->
+                    <el-carousel :interval="4000" type="card" height="200px" :autoplay="true">
+                        <el-carousel-item v-for="item in 3" :key="item" :interval="1000">
+                        </el-carousel-item>
+                    </el-carousel>
+                </el-row>
+
+                <el-row class="text_one">
+                    <el-col :span="23" offset="1" style="background: #fff">
+                        <el-row class="text_left_title">
+                            <el-col offset="1">我本楚狂人，凤歌笑孔丘</el-col>
+                        </el-row>
+                        <el-row class="text_left_content">
+                            <el-col :span="10" offset="1">
+                                <img src="./i/f10.jpg" alt="">
+                            </el-col>
+                            <el-col :span="11" offset="1">
+                                <el-row><span>2015/10/9</span></el-row>
+                                <el-row><span>我们一直在坚持着，不是为了改变这个世界，而是希望不被这个世界所改变。</span></el-row>
+                            </el-col>
+                        </el-row>
+                    </el-col>
+                </el-row>
+                <el-divider></el-divider>
+                <el-row class="text_one">
+                    <el-col :span="23" offset="1" style="background: #fff">
+                        <el-row class="text_left_title">
+                            <el-col offset="1">爱自己是终生浪漫的开始</el-col>
+                        </el-row>
+                        <el-row class="text_left_content">
+                            <el-col :span="10" offset="1">
+                                <img src="./i/f19.jpg" alt="">
+                            </el-col>
+                            <el-col :span="11" offset="1">
+                                <el-row><span>2015/10/9</span></el-row>
+                                <el-row><span>the whole of life becomes an act of letting go, but what always hurts the most is not
+                                        taking a moment to say goodbye</span></el-row>
+                            </el-col>
+                        </el-row>
+                    </el-col>
+                </el-row>
+            </el-col>
+            <el-col :span="7" offset="1" class="main_right">
+                <el-row>
+                    <img src="./i/f13.jpg" alt="">
+                    <el-button @click="drawer = true" type="text" style="width:100%" icon="el-icon-aim">
+                        View Big
+                    </el-button>
+                    <el-drawer title="Is the picture big ？" :visible.sync="drawer" :direction="direction" :before-close="handleClose" size="100%">
+                        <span><img src="./i/f13.jpg" alt="" style="width:100%;height:100% "></span>
+                    </el-drawer>
+                </el-row>
+                <el-divider></el-divider>
+                <el-row><img src="./i/f14.jpg" alt=""></el-row>
+                <el-divider></el-divider>
+                <el-row><img src="./i/f13.jpg" alt=""></el-row>
+                <el-divider></el-divider>
+                <el-row><img src="./i/f14.jpg" alt=""></el-row>
+                <el-divider></el-divider>
+                <el-row><img src="./i/f13.jpg" alt=""></el-row>
+            </el-col>
+        </el-row>
+        
+        <el-row>
+            <el-col :span="12" offset="2" class="more_text">
+                <el-divider></el-divider>
+            </el-col>
+        </el-row>
+        <el-row>
+            <el-col :span="2" offset="12" class="more_text">
+                <el-button>
+                    更多文章<i class="el-icon-d-arrow-right"></i>
+                </el-button>
+            </el-col>
+        </el-row>
+        
+        <el-main style="height:300px"></el-main>
+        
+        <el-footer class="footer">
+            © 2015 AllMobilize, Inc. Licensed under MIT license. Made with love By LWXYFER
+        </el-footer>
+    </div>
+</body>
+<!-- import Vue before Element -->
+<script src="./elementUI/vue.js"></script>
+<!-- import JavaScript -->
+<script src="./elementUI/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                visible: false, 
+                drawer: false,
+                direction: 'rtl'
+            }
+        }
+    })
+</script>
+
+</html>

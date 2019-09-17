@@ -1,0 +1,42 @@
+body{
+    background: url("../i/f6.jpg") no-repeat 100%;
+}
+.input{
+    margin-bottom: 30px;
+}
+.title {    
+    animation: title;
+    animation-duration: 1s;
+    top: 100px;
+    left: 100px;
+    opacity: 0.7;
+}
+@keyframes title {
+    0% {opacity: 0;}
+    40% {opacity: 0;top:50px;}
+    100% {opacity: 0.7;top:100px;}
+}
+.input {    
+    animation: input;
+    animation-duration: 1s;
+    top: 100px;
+    left: 100px;
+    opacity: 0.5;
+}
+@keyframes input {
+    0% {opacity: 0;}
+    40% {opacity: 0;left:50px;}
+    100% {opacity: 0.5;left:100px;}
+}
+.login {    
+    animation: login;
+    animation-duration: 1s;
+    top: 100px;
+    left: 100px;
+    opacity: 0.5;
+}
+@keyframes login {
+    0% {opacity: 0;}
+    40% {opacity: 0;top:200px;}
+    100% {opacity: 0.5;top:100px;}
+}

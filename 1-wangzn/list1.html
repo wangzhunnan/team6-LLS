@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>list</title>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="./elementUI/index.css">
+    <link rel="stylesheet" href="./css/list1.css">
+</head>
+
+<body>
+    <div id="app">
+        <el-row class="title">
+            <el-col :span="2" :offset="11">
+                我的个人博客
+            </el-col>
+        </el-row>
+        <el-row class="nav">
+            <el-col :span="2" offset="2">
+                <el-button type="text"><a href="./index1.html" style="text-decoration: none;color: #409EFF">首页</a></el-button>
+            </el-col>
+            <el-col :span="2" offset="1">
+                <el-button type="text"><a href="./list1.html" style="text-decoration: none;color: #409EFF">文章列表</a></el-button>
+            </el-col>
+            <el-col :span="2" offset="1">
+                <el-button type="text"><a href="./login1.html" style="text-decoration: none;color: #409EFF">登录</a></el-button>
+            </el-col>
+            <el-col :span="2" offset="1">
+                <el-button type="text">注册</el-button>
+            </el-col>
+            <el-col :span="4" offset="2">
+                <el-input placeholder="请输入文章" prefix-icon="el-icon-search" v-model="input">
+                </el-input>
+            </el-col>
+        </el-row>
+
+        <el-row>
+            <el-col :span="12" offset="2">
+                <el-row style="font-size: 22px;text-align: center;height: 60px;line-height: 80px;">所有文章</el-row>
+                <el-divider></el-divider>
+                <el-row>
+                    <el-col :span="19" offset="1">
+                        <el-divider direction="vertical"></el-divider>
+                        <el-link href="" target="_blank" :underline="false">Lorem ipsum dolor sit amet.</el-link>
+                    </el-col>
+                    <el-col :span="4">2019-9-1</el-col>
+                </el-row>
+                <el-row class="article">
+                    <el-col :span="19" offset="1">
+                        <el-divider direction="vertical"></el-divider>
+                        <el-link href="" target="_blank" :underline="false">Lorem ipsum dolor sit amet consectetur.</el-link>
+                    </el-col>
+                    <el-col :span="4">2019-9-2</el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="19" offset="1">
+                        <el-divider direction="vertical"></el-divider>
+                        <el-link href="" target="_blank" :underline="false">Lorem ipsum dolor sit amet....</el-link>
+                    </el-col>
+                    <el-col :span="4">2019-9-3</el-col>
+                </el-row>
+                <el-row class="article">
+                    <el-col :span="19" offset="1">
+                        <el-divider direction="vertical"></el-divider>
+                        <el-link href="" target="_blank" :underline="false">Explicabo voluptates illo debitis consequatur voluptatem!</el-link>
+                    </el-col>
+                    <el-col :span="4">2019-9-4</el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="19" offset="1">
+                        <el-divider direction="vertical"></el-divider>
+                        <el-link href="" target="_blank" :underline="false">Ducimus cum at quo dicta sequi!</el-link>
+                    </el-col>
+                    <el-col :span="4">2019-9-5</el-col>
+                </el-row>
+                <el-row class="article">
+                    <el-col :span="19" offset="1">
+                        <el-divider direction="vertical"></el-divider>
+                        <el-link href="" target="_blank" :underline="false">Qui rem commodi error doloribus!</el-link>
+                    </el-col>
+                    <el-col :span="4">2019-9-6</el-col>
+                </el-row>
+                <el-row class="article">
+                    <el-col :span="19" offset="1">
+                        <el-divider direction="vertical"></el-divider>
+                        <el-link href="" target="_blank" :underline="false">Qui temporibus rem commodi doloribus!</el-link>
+                    </el-col>
+                    <el-col :span="4">2019-9-7</el-col>
+                </el-row>
+                <el-row class="article">
+                    <el-col :span="19" offset="1">
+                        <el-divider direction="vertical"></el-divider>
+                        <el-link href="" target="_blank" :underline="false">Qui temporibus commodi error doloribus!</el-link>
+                    </el-col>
+                    <el-col :span="4">2019-9-8</el-col>
+                </el-row>
+                <el-divider></el-divider>
+
+                <el-row>
+                    <!-- <el-col :span="4"><el-button icon="el-icon-d-arrow-left" style="width: 100%;">上一页</el-button></el-col> -->
+                    <el-col>
+                    <!-- <el-col :span="13"> -->
+                        <el-pagination background layout="prev, pager, next" :total="50" @current-change="curChange" @prev-click="prevClick" @next-click="nextClick">
+                        </el-pagination>
+                    </el-col>
+                    <!-- <el-col :span="4" offset="8">
+                        <el-button style="width: 100%;">下一页<i class="el-icon-d-arrow-right el-icon--right"></i></el-button>
+                    </el-col> -->
+                </el-row>
+                
+                
+
+            </el-col>
+            <el-col :span="7" offset="1" class="main_right">
+                <el-row>
+                    <img src="./i/f13.jpg" alt="">
+                    <el-button @click="drawer = true" type="text" style="width:100%" icon="el-icon-aim">
+                        View Big
+                    </el-button>
+                    <el-drawer title="Is the picture big ？" :visible.sync="drawer" :direction="direction"
+                        :before-close="handleClose" size="100%">
+                        <span><img src="./i/f13.jpg" alt="" style="width:100%;height:100% "></span>
+                    </el-drawer>
+                </el-row>
+                <el-divider></el-divider>
+                <el-row><img src="./i/f14.jpg" alt=""></el-row>
+                <el-divider></el-divider>
+            </el-col>
+        </el-row>
+
+
+
+
+        <el-main style="height:600px"></el-main>
+        
+        <el-footer class="footer">
+            © 2015 AllMobilize, Inc. Licensed under MIT license. Made with love By LWXYFER
+        </el-footer>
+
+    </div>
+</body>
+<!-- import Vue before Element -->
+<script src="./elementUI/vue.js"></script>
+<!-- import JavaScript -->
+<script src="./elementUI/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                visible: false,
+                input: "",
+                drawer: false,
+                direction: 'rtl'
+            }
+        },
+        methods: {
+            curChange(val) {
+                console.log(val)
+            },
+            prevClick(val) {
+                console.log(val)
+            },
+            nextClick(val) {
+                console.log(val)
+            }
+        }
+    })
+</script>
+
+</html>
