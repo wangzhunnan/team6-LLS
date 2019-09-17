@@ -1,5 +1,5 @@
 body{
-    background: url(./images/06denglu.jpg) ;
+    background: url(../images/06denglu.jpg) ;
     height:100%;
     width:100%;
     overflow: hidden;
@@ -108,7 +108,7 @@ body{
 /* 底部 */
 .bottom{
     height: 85px;
-    background-image: url(./images/ditu.jpg);
+    background-image: url(../images/ditu.jpg);
     opacity: 0.3;
     margin-top: 180px;
     text-align: center;
