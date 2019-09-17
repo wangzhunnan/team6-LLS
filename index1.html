@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>index</title>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="./elementUI/index.css">
+    <link rel="stylesheet" href="./css/index1.css">
+</head>
+<style>
+    .el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.7#d40909
+    line-height: 200px;
+    margin: 0;
+    }
+
+    .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+    background-size: 100% 100%;
+    background-image: url("./i/11.jpg")
+    }
+
+    .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+    background-size: 100% 100%;
+    background-image: url("./i/8.jpg")
+    }
+</style>
+<body>
+    <div id="app">
+
+        <el-row class="title">
+            <el-col :span="2" :offset="11">
+                我的个人博客
+            </el-col>
+        </el-row>
+        <el-row class="nav">
+            <el-col :span="1" offset="2">
+                <el-button type="text">首页</el-button>
+            </el-col>
+            <el-col :span="1" offset="1">
+                <el-button type="text">文章列表</el-button>
+            </el-col>
+            <el-col :span="1" offset="1">
+                <el-button type="text">登录</el-button>
+            </el-col>
+            <el-col :span="1" offset="1">
+                <el-button type="text">注册</el-button>
+            </el-col>
+            <el-col :span="4" offset="6">
+                <el-input placeholder="请输入文章" prefix-icon="el-icon-search" v-model="input">
+                </el-input>
+            </el-col>
+        </el-row>
+        <el-row>
+            <el-col :span="15" :offset="5">
+                <el-carousel :interval="4000" type="card" height="200px">
+                    <el-carousel-item v-for="item in 6" :key="item">
+                    </el-carousel-item>
+                </el-carousel>
+            </el-col>
+        </el-row>
+        <el-row>
+            <el-col :span="12" offset="2">
+                <el-row class="text_one">
+                    <el-col :span="23" offset="1" style="background: #fff">
+                        <el-row class="text_left_title">
+                            <el-col offset="1">纳木错的星空很美，我只想抬起头就是你</el-col>
+                        </el-row>
+                        <el-row class="text_left_content">
+                            <el-col :span="10" offset="1">
+                                <img src="./i/1.jpg" alt="">
+                            </el-col>
+                            <el-col :span="11" offset="1">
+                                <el-row><span>2019/07/10</span></el-row>
+                                <el-row>
+                                    <span>安静美好的地方出现转湖的朝圣人，肃穆纯洁，是不是我向你许愿，便可荡涤我一身罪孽，是不是我转湖一周，你便赐还我那心中美好。也是那一次，我终于相信美好，一片星辰铺设在我眼帘，美到不能失去，世间怎的还有这样的美好，繁星怎能繁到如此，美，原来真的可以超越想象。</span>
+                                </el-row>
+                            </el-col>
+                        </el-row>
+                    </el-col>
+                </el-row>
+                <el-row class="text_one">
+                    <el-col :span="23" offset="1" style="background: #fff">
+                        <el-row class="text_left_title">
+                            <el-col offset="1">漫步于月亮湾边，梦幻又浪漫</el-col>
+                        </el-row>
+                        <el-row class="text_left_content">
+                            <el-col :span="10" offset="1">
+                                <img src="./i/2.jpg" alt="">
+                            </el-col>
+                            <el-col :span="11" offset="1">
+                                <el-row><span>2019/07/08</span></el-row>
+                                <el-row>
+                                    <span>置身于纳木错，人的灵魂会被眼前纯净的湖水彻底洗涤。这个世界上最高最美的湖泊，会让站在她身边的你感到震撼，仿佛置身于一个蓝色的世界，眼中满满的全是神圣</span>
+                                </el-row>
+                            </el-col>
+                        </el-row>
+                    </el-col>
+                    <el-row class="text_one">
+                        <el-col :span="23" offset="1" style="background: #fff">
+                            <el-row class="text_left_title">
+                                <el-col offset="1">羊卓雍措，凄美的爱情故事</el-col>
+                            </el-row>
+                            <el-row class="text_left_content">
+                                <el-col :span="10" offset="1">
+                                    <img src="./i/6.jpg" alt="">
+                                </el-col>
+                                <el-col :span="11" offset="1">
+                                    <el-row><span>2019/07/08b</span></el-row>
+                                    <el-row>
+                                        <span>羊湖给了人们无尽的幻想，也包容了人们所有的情思。对于大多匆匆敢来，又匆匆离去的人们，他们给予路人的不是照片里的美景，而是脑海里的片刻宁静。</span>
+                                    </el-row>
+                                </el-col>
+                            </el-row>
+                        </el-col>
+                    </el-row>
+                </el-row>
+            </el-col>
+            <el-col :span="7" offset="1" class="main_right">
+                <el-row><img src="./i/9.jpg" alt=""></el-row>
+                <el-row><img src="./i/10.jpg" alt=""></el-row>
+                <el-row><img src="./i/7.jpg" alt=""></el-row>
+            </el-col>
+        </el-row>
+        
+        <el-row>
+            <el-col :span="2" offset="12" class="more_text">
+                <el-button>
+                    更多文章<i class="el-icon-d-arrow-right"></i>
+                </el-button>
+            </el-col>
+        </el-row>
+        
+        <el-main style="height:300px"></el-main>
+        <el-footer class="footer">
+            © 2015 AllMobilize, Inc. Licensed under MIT license. Made with love By LWXYFER
+        </el-footer>
+    </div>
+</body>
+<!-- import Vue before Element -->
+<script src="./elementUI/vue.js"></script>
+<!-- import JavaScript -->
+<script src="./elementUI/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return { visible: false }
+        }
+    })
+</script>
+
+</html>

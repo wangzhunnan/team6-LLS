@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        .el-header {
+            /* color: #333; */
+            text-align: center;
+            line-height: 60px;
+            color: #fff;
+            background-color: #414141;
+        }
+
+        .el-footer {
+            background-color: #414141;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .el-footer a {
+            cursor: pointer;
+            text-decoration: none;
+            color: #aaa;
+        }
+
+        .el-main {
+            /* background-color: rgb(219, 219, 219); */
+            color: #333;
+            text-align: center;
+            /* height: 459px; */
+        }
+
+        .el-aside {
+            /* border: 1px solid #D3DCE6; */
+            color: #333;
+            text-align: center;
+            padding-top: 15px;
+            /* line-height: 200px; */
+        }
+
+        .bar {
+            /* position: absolute; */
+            width: 95%;
+            margin: 0 auto;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .search {
+            line-height: 60px;
+        }
+
+        .left-top {
+            /* border-bottom: 1px solid #ccc; */
+            text-align: center;
+            height: 70px;
+            line-height: 70px;
+            /* background: lemonchiffon; */
+            font-size: 25px;
+            margin: 0 auto;
+        }
+
+        .list-all {
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            /* height: 400px; */
+            width: 80%;
+            margin-left: 10%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        .list {
+            border-left: 2px solid green;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .list-one {
+            overflow: hidden;
+            padding-left: 2%;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .list-one-a {
+            float: left;
+        }
+
+        .list-one-b {
+            float: right;
+        }
+
+        .block{
+            margin-top: 2%;
+        }
+
+        /* 右侧边栏 我的 头部 开始 */
+        .right .right-one {
+            /* min-height: 620px; */
+            background: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .right .right-one-head {
+            width: 100%;
+            min-height: 100px;
+            /* background: darkkhaki; */
+            border-bottom: 1px solid #ccc;
+        }
+
+        .right .right-one-body {
+            width: 100%;
+            min-height: 30px;
+            /* background: khaki; */
+            border-bottom: 1px solid #ccc;
+        }
+
+        .right .right-two {
+            min-height: 250px;
+            background: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .right .tag-group {
+            padding-top: 15px;
+        }
+
+        .right .right-two {
+            margin-top: 20px;
+        }
+
+        .right .right-top {
+            padding-left: 15px;
+            color: #333;
+            padding-top: 15px;
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .right .right-bq {
+            box-sizing: border-box;
+            margin-top: 0px;
+        }
+
+        .demo-basic--circle {
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+
+        .Aning {
+            color: #333;
+            font-size: 25px;
+            text-align: center;
+            line-height: 45px;
+            padding-left: 5px;
+            padding-top: 10px;
+        }
+
+        .Aning-sxin {
+            /* background: #333; */
+            width: 175px;
+            margin-left: 15px;
+        }
+
+        /* 右侧边栏 我的 头部 结束 */
+
+        /* 右侧边栏 我的 内容 开始 */
+        .right .right-one-body {
+            padding-top: 10px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .right .right-one-body .body-one .el-col {
+            cursor: pointer;
+        }
+
+        .el-tag--plain {
+            margin: 10px 10px;
+            cursor: pointer;
+        }
+
+        /* 右侧边栏 我的 内容 结束 */
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 头部开始 -->
+        <el-container>
+
+            <el-header>
+                <el-row>
+                    <el-col :span="24">
+                        <div class="grid-content bg-purple-dark">我的个人博客</div>
+                    </el-col>
+                </el-row>
+            </el-header>
+
+            <!-- 导航 开始 -->
+            <el-row class="bar">
+                <el-col :span="18">
+                    <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
+                        <el-menu-item index="1">首页</el-menu-item>
+                        <el-menu-item index="2">文章列表</el-menu-item>
+                        <el-menu-item index="3">登录</el-menu-item>
+                        <el-menu-item index="4">注册</el-menu-item>
+                    </el-menu>
+                </el-col>
+
+                <el-col :span="6">
+                    <el-input class="search" placeholder="别搜了，你搜不到的" suffix-icon="el-icon-search" v-model="input1">
+                    </el-input>
+                </el-col>
+            </el-row>
+            <!-- 导航 结束 -->
+        </el-container>
+        <!-- 头部结束 -->
+
+        <!-- 中心开始 -->
+        <el-main>
+            <el-row>
+                <!-- 左半边主体 开始 -->
+                <el-col :span="18" class="left">
+                    <!-- 所有文章 开始 -->
+                    <el-row>
+                        <el-col class="left-top"><b>所有文章</b></el-col>
+                    </el-row>
+                    <!-- 所有文章 结束 -->
+
+                    <!-- 列表 开始 -->
+                    <el-row>
+                        <el-col class="list-all">
+                            <el-row>
+                                <el-col class="list">
+                                    <el-row>
+                                        <el-col class="list-one" :span="24">
+                                            <el-link class="list-one-a" :underline="false" href="#" :span="18">
+                                                旭日生辉，龙腾锦绣，宫阙奇观千古瑞。</el-link>
+                                            <el-link class="list-one-b" :underline="false" href="#" :span="6">2019-09-16
+                                            </el-link>
+                                        </el-col>
+                                    </el-row>
+                                    <el-row>
+                                        <el-col class="list-one" :span="24">
+                                            <el-link class="list-one-a" :underline="false" href="#" :span="18">
+                                                存我佛于心，碧波疏影，秋实春华举。</el-link>
+                                            <el-link class="list-one-b" :underline="false" href="#" :span="6">2019-09-16
+                                            </el-link>
+                                        </el-col>
+                                    </el-row>
+                                    <el-row>
+                                        <el-col class="list-one" :span="24">
+                                            <el-link class="list-one-a" :underline="false" href="#" :span="18">
+                                                春沾仙蕾，近水皆铺翡翠衫。</el-link>
+                                            <el-link class="list-one-b" :underline="false" href="#" :span="6">2019-09-16
+                                            </el-link>
+                                        </el-col>
+                                    </el-row>
+                                    <el-row>
+                                        <el-col class="list-one" :span="24">
+                                            <el-link class="list-one-a" :underline="false" href="#" :span="18">
+                                                冰川绝壁也高歌，雾涌云翻飞瀑多。</el-link>
+                                            <el-link class="list-one-b" :underline="false" href="#" :span="6">2019-09-16
+                                            </el-link>
+                                        </el-col>
+                                    </el-row>
+                                    <el-row>
+                                        <el-col class="list-one" :span="24">
+                                            <el-link class="list-one-a" :underline="false" href="#" :span="18">
+                                                春风驻马，溪水有声唱响当雄和谐曲。</el-link>
+                                            <el-link class="list-one-b" :underline="false" href="#" :span="6">2019-09-16
+                                            </el-link>
+                                        </el-col>
+                                    </el-row>
+                                </el-col>
+                            </el-row>
+                        </el-col>
+                    </el-row>
+
+                    <div class="block">
+                        <el-pagination layout="prev, pager, next" :total="60"></el-pagination>
+                    </div>
+                </el-col>
+                <!-- 列表 结束 -->
+
+                <!-- 左半边主体 结束 -->
+                <!-- 右半边主体 开始 -->
+                <el-col :span="6" class="right">
+                    <!-- 我的 侧边栏 -->
+                    <el-row>
+                        <el-col class="right-one">
+                            <!-- 头部信息 -->
+                            <el-row>
+                                <el-col class="right-one-head">
+                                    <template>
+                                        <el-row class="demo-avatar demo-basic">
+                                            <el-col :span="8">
+                                                <!-- <div class="sub-title">circle</div> -->
+                                                <div class="demo-basic--circle">
+                                                    <div class="block">
+                                                        <el-avatar :size="70" src="i/001.jpg"></el-avatar>
+                                                    </div>
+                                                </div>
+                                            </el-col>
+                                            <el-col :span="10">
+                                                <el-row class="Aning">
+                                                    温小凯
+                                                </el-row>
+                                                <el-row class="Aning-sxin">
+                                                    <el-button size="mini" type="danger" round>私信</el-button>
+                                                    <el-button size="mini" type="success" round>合作</el-button>
+                                                </el-row>
+                                            </el-col>
+                                        </el-row>
+                                    </template>
+                                </el-col>
+                            </el-row>
+                            <!-- 中间信息 -->
+                            <el-row>
+                                <el-col class="right-one-body">
+                                    <el-row class="body-one" :span="20" :gutter="2">
+                                        <el-col :span="6">原创</el-col>
+                                        <el-col :span="6">粉丝</el-col>
+                                        <el-col :span="6">喜欢</el-col>
+                                        <el-col :span="6">评论</el-col>
+                                    </el-row>
+                                    <el-row class="body-two" :span="20" :gutter="2">
+                                        <el-col :span="6">n+</el-col>
+                                        <el-col :span="6">n+</el-col>
+                                        <el-col :span="6">n+</el-col>
+                                        <el-col :span="6">n+</el-col>
+                                    </el-row>
+                                </el-col>
+                            </el-row>
+
+                        </el-col>
+                    </el-row>
+
+                    <!-- 标签 侧边栏 开始 -->
+                    <el-row>
+                        <el-col class="right-two">
+                            <el-row class="right-top">
+                                <el-col>热门标签</el-col>
+                            </el-row>
+                            <el-row class="right-bq">
+                                <el-col>
+                                    <div class="tag-group">
+                                        <el-tag v-for="item in items" :key="item.label" :type="item.type"
+                                            effect="plain">
+                                            {{ item.label }}
+                                        </el-tag>
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </el-col>
+                    </el-row>
+                    <!-- 标签 侧边栏 结束 -->
+
+                </el-col>
+                <!-- 右半边主体 结束 -->
+
+            </el-row>
+        </el-main>
+        <!-- 中心结束 -->
+
+        <!-- 底部 开始 -->
+        <el-container>
+            <el-footer>
+                <template>
+                    <div>
+                        <span><a href="">温小凯</a></span>
+                        <el-divider direction="vertical"></el-divider>
+                        <span><a href="">北京</a></span>
+                        <el-divider direction="vertical"></el-divider>
+                        <span><a href="">北京信息职业技术学院</a></span>
+                    </div>
+                </template>
+            </el-footer>
+        </el-container>
+        <!-- 底部 结束 -->
+    </div>
+</body>
+
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                input1: '',
+                activeIndex: '1',
+                items: [
+                    { type: '', label: '电影' },
+                    { type: 'success', label: '摄影' },
+                    { type: 'info', label: '音乐' },
+                    { type: 'danger', label: '东野圭吾' },
+                    { type: 'danger', label: '温小凯' },
+                    { type: 'success', label: '桌游' },
+                    { type: 'info', label: '神经质'},
+                ],
+                value: new Date()
+            }
+        }
+    })
+</script>
+
+</html>
